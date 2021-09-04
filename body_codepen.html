@@ -1,4 +1,3 @@
-
 <div id="load_curtain">
 	<div id="load_wrapper">
 		<h3> Загрузка данных</h3>
@@ -17,20 +16,24 @@
 		<div class="container-fluid">
 
 			<div class="soc_logo_wrapper">
-				<a href="https://t.me/kon_soc"><img class="soc_logo"  src="https://cdn.cdnlogo.com/logos/t/37/telegram.svg"></a>
-				<a href="https://www.youtube.com/channel/UCvsRa4DoYhJmQv7_7fqr04Q"><img class="soc_logo"  src="https://cdn.cdnlogo.com/logos/y/57/youtube-icon.svg"></a>
-				<a href="https://vimeo.com/user149798668"><img class="soc_logo"  
-					src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/img/logos/vimeo-tile.svg"></a>				
-					&nbsp;&nbsp;&nbsp;
-					<a href="https://patreon.com/konsoc"><img class="soc_logo" src="https://cdn.cdnlogo.com/logos/p/39/patreon.svg"></a>
+				<a href="https://t.me/kon_soc"><img class="soc_logo"
+						src="https://cdn.cdnlogo.com/logos/t/37/telegram.svg"></a>
+				<a href="https://www.youtube.com/channel/UCvsRa4DoYhJmQv7_7fqr04Q"><img class="soc_logo"
+						src="https://cdn.cdnlogo.com/logos/y/57/youtube-icon.svg"></a>
+				<a href="https://vimeo.com/user149798668"><img class="soc_logo"
+						src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/img/logos/vimeo-tile.svg"></a>
+				&nbsp;&nbsp;&nbsp;
+				<a href="https://patreon.com/konsoc"><img class="soc_logo"
+						src="https://cdn.cdnlogo.com/logos/p/39/patreon.svg"></a>
 				<a href="https://donationalerts.com/r/konsoc">
 					<img class="soc_logo" src="https://www.donationalerts.com/img/header/logo.svg"></a>
 			</div>
 			<div class="header-logo">
-				<a href="/" class="nav-link nav-logo"><span class="logo-up">KonSoc</span><br>
+				<div class="nav-link nav-logo">
+					<span class="logo-up">KonSoc</span><br>
 					<span class="logo-sub">ПРБ/РНГ/Консорция&nbsp;социальных&nbsp;канонов</span>
-				</a>
-			</div >
+				</div>
+			</div>
 		</div> <!-- container-fluid.// -->
 	</nav>
 
@@ -44,18 +47,22 @@
 		<div id="chart_covid" class="chart_div"></div>
 
 		<div id="chart_vaccination_percent" class="chart_div"></div>
-		<div >
-			<label class="form-check-label"><input class="form-check-input" type="radio" name="chart_accuracy" value="4_round"> среднее за 4д. </label>
-			<label class="form-check-label"><input class="form-check-input" type="radio" name="chart_accuracy" value="7_round"> среднее за 7д. </label>
-			<label class="form-check-label"><input class="form-check-input" type="radio" name="chart_accuracy" value="7_round_frame"  checked> среднее за 7д. "падающим окном"</label>
-			<label class="form-check-label"><input class="form-check-input" type="radio" name="chart_accuracy" value="as_is"> как есть </label>
+		<div>
+			<label class="form-check-label"><input class="form-check-input" type="radio" name="chart_accuracy"
+					value="4_round"> среднее за 4д. </label>
+			<label class="form-check-label"><input class="form-check-input" type="radio" name="chart_accuracy"
+					value="7_round"> среднее за 7д. </label>
+			<label class="form-check-label"><input class="form-check-input" type="radio" name="chart_accuracy"
+					value="7_round_frame" checked> среднее за 7д. "падающим окном"</label>
+			<label class="form-check-label"><input class="form-check-input" type="radio" name="chart_accuracy"
+					value="as_is"> как есть </label>
 			<div class="chart_size_wrap">
 				<label for="slct_chart_size">Размер графика: </label>
 				<select class="form-select form-select-sm" aria-label=".form-select-sm example" id="slct_chart_size">
-					<option data-height="250" data-width="350" >250x350</option>
-					<option data-height="350" data-width="550" >350x550</option>
+					<option data-height="250" data-width="350">250x350</option>
+					<option data-height="350" data-width="550">350x550</option>
 					<option data-height="450" data-width="850" selected>450x850</option>
-					<option data-height="700" data-width="1200" >700x1200</option>
+					<option data-height="700" data-width="1200">700x1200</option>
 				</select>
 			</div>
 		</div>
@@ -63,21 +70,25 @@
 	<div class="map_container covid_container" style="display: inline-block">
 		<div id="svgMapDeaths"></div>
 		<div class="row slide_date_cap">
-			<p class="p_date_cap p_left"><span id="spnDateBegin"></span> </p><p class="p_date_cap p_center"><span id="spnDateCurrent"></span></p>
+			<p class="p_date_cap p_left"><span id="spnDateBegin"></span> </p>
+			<p class="p_date_cap p_center"><span id="spnDateCurrent"></span></p>
 			<p class="p_date_cap p_right"> <span id="spnDateEnd"></span></p>
 		</div>
-		<label for="dateRange"></label><input type="range" class="form-range" min="1" max="100" value="100"  id="dateRange">
+		<label for="dateRange"></label><input type="range" class="form-range" min="1" max="100" value="100"
+			id="dateRange">
 
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="input-group">
-					<label><input type="checkbox" class="form-check-input chk_map"  id="chk_map_relative">относительно населения</label>
+					<label><input type="checkbox" class="form-check-input chk_map" id="chk_map_relative">относительно
+						населения</label>
 				</div>
 			</div>
 			<div class="col-lg-6">
 				<div class="input-group">
 					<label for="slct_map_time">Время: </label>
-					<select class="ms-2 form-select form-select-sm" aria-label=".form-select-sm example" id="slct_map_time">
+					<select class="ms-2 form-select form-select-sm" aria-label=".form-select-sm example"
+						id="slct_map_time">
 						<option data-time="7days" selected>за 7 дней</option>
 						<option data-time="all_time">за все время</option>
 					</select>
@@ -85,18 +96,22 @@
 			</div>
 		</div>
 		<div class="row-not">
-			<label><input type="checkbox" class="form-check-input chk_map"  id="chk_map_europe">Европа</label>
-			<label><input type="checkbox" class="form-check-input chk_map"  id="chk_map_asia">Азия</label>
+			<label><input type="checkbox" class="form-check-input chk_map" id="chk_map_europe">Европа</label>
+			<label><input type="checkbox" class="form-check-input chk_map" id="chk_map_asia">Азия</label>
 		</div>
 		<div class="map_control_data_container">
-			<label class="form-check-label"><input class="form-check-input" type="radio" name="map_radio_data" value="death" checked> Смертность </label>
-			<label class="form-check-label"><input class="form-check-input" type="radio" name="map_radio_data" value="new_case" > Заболеваемость </label>
-			<label class="form-check-label"><input class="form-check-input" type="radio" name="map_radio_data" value="vaccination" > Вакцинация </label>
-			<label class="form-check-label"><input class="form-check-input" type="radio" name="map_radio_data" value="death_rate" > Коэффициент смертности </label>
+			<label class="form-check-label"><input class="form-check-input" type="radio" name="map_radio_data"
+					value="death" checked> Смертность </label>
+			<label class="form-check-label"><input class="form-check-input" type="radio" name="map_radio_data"
+					value="new_case"> Заболеваемость </label>
+			<label class="form-check-label"><input class="form-check-input" type="radio" name="map_radio_data"
+					value="vaccination"> Вакцинация </label>
+			<label class="form-check-label"><input class="form-check-input" type="radio" name="map_radio_data"
+					value="death_rate"> Коэффициент смертности </label>
 		</div>
 	</div>
-	<div class="country_info_wrapper covid_container" >
-		<div class="country_info_container covid_container" id="country_info_container" >
+	<div class="country_info_wrapper covid_container">
+		<div class="country_info_container covid_container" id="country_info_container">
 			<h6>Статистика по стране </h6>
 			<div class="cntr_info_line row">
 				<div class="cntr_info_param col"> kjlkjlklkj:
@@ -117,11 +132,13 @@
 				</p>
 				<h5>Patreon</h5>
 				<p>
-					<a href="https://patreon.com/konsoc"><img class="donate_logo" src="https://cdn.cdnlogo.com/logos/p/39/patreon.svg">https://patreon.com/konsoc</a>
+					<a href="https://patreon.com/konsoc"><img class="donate_logo"
+							src="https://cdn.cdnlogo.com/logos/p/39/patreon.svg">https://patreon.com/konsoc</a>
 				</p>
 				<h5> Donation Alerts</h5>
 				<p>
-					<a href="https://donationalerts.com/r/konsoc"><img class="donate_logo" src="https://www.donationalerts.com/img/header/logo.svg">https://donationalerts.com/r/konsoc</a>
+					<a href="https://donationalerts.com/r/konsoc"><img class="donate_logo"
+							src="https://www.donationalerts.com/img/header/logo.svg">https://donationalerts.com/r/konsoc</a>
 				</p>
 				<h5>BitCoin</h5>
 				<p>
@@ -136,147 +153,312 @@
 				По Китаю данные недостоверны ;)
 			</p>
 			<h3>Статистические странности эпидемии Ковида в России.</h3>
-			<img class="col-10"  
+			<img class="col-10"
 				src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_01.png">
-				
-				
-				<p class="text-start">
-					1. Волны бывают двух видов - легкая и тяжелая. При легкой волне смертность и заболеваемость низкие, а форма графика синусообразная, с малой скоростью увеличения и продолжительным плато на максимуме. При тяжелой волне  смертность и заболеваемость высокие, а форма графика в виде треугольника, когда сначала идет стремительный подъем, на вершине резкий, мгновенный перелом и столь же стремительный спуск. <br/>
-				<br/>
-				В России с июля по октябрь идет две противоположные тенденции - медленное догорание первой волны и столь же медленное развитие экспоненциальной эпидемии. Но начиная с октября медленный подъем экспоненты резко ускоряется и достигает максимума в первых числах декабря. Что точно повторяет картину на Украине. Но если на Украине эпидемия после пика тут же идет на убыль, то в России она затормаживается на плато. В декабре же начинается и пока еще неспешная кампания прокалывания. 
-				<br/>
-			</p>
-			<p class="fst-italic fw-bold text-warning bg-dark">
-				Первая странность: у графика тяжелой волны должна быть острая вершина. 
-			</p>
-			
-			<img class="col-10"  
-				src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_02.png">
-			
-				<p class="text-start">
-					2. После прохождения плато и перед началом резкого падения случился локальный горбик заболеваемости. Который совпадает с первым пиком модной процедуры. Как уже сказал, данные по уколам на первые месяцы недостоверны, и выделение этой взаимосвязи можно легко посчитать притянутым за уши.				
-				<br/>
-			</p>
-			<p class="fst-italic fw-bold text-warning bg-dark">
-				Вторая странность - соответствие локального пика процедуры с локальным пиком заболеваемости. 
-			</p>
-			
-			<img class="col-10"  
-			src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_03.png">
-		
+
+
 			<p class="text-start">
-				3. С конца декабря по середину января идет снижение смертности. Которое внезапно сменяется на рост, и за неделю, к концу января, дорастает до декабрьского максимума. Хотя соответствующего по масштабу изменения графика заболеваемости нету. Есть только очень маленький горбик месяц назад. Разница в смертности между январским минимумом и максимумом смертности составляет 15 процентов. Тогда как соответствующее изменение графика заболеваемости составляет только 3%. 
+				1. Волны бывают двух видов - легкая и тяжелая. При легкой волне смертность и заболеваемость низкие, а
+				форма графика синусообразная, с малой скоростью увеличения и продолжительным плато на максимуме. При
+				тяжелой волне смертность и заболеваемость высокие, а форма графика в виде треугольника, когда сначала
+				идет стремительный подъем, на вершине резкий, мгновенный перелом и столь же стремительный спуск. <br />
+				<br />
+				В России с июля по октябрь идет две противоположные тенденции - медленное догорание первой волны и столь
+				же медленное развитие экспоненциальной эпидемии. Но начиная с октября медленный подъем экспоненты резко
+				ускоряется и достигает максимума в первых числах декабря. Что точно повторяет картину на Украине. Но
+				если на Украине эпидемия после пика тут же идет на убыль, то в России она затормаживается на плато. В
+				декабре же начинается и пока еще неспешная кампания прокалывания.
+				<br />
 			</p>
 			<p class="fst-italic fw-bold text-warning bg-dark">
-				Третья странность - пятикратное несоответствие масштабов изменений графиков смертности и заболеваемости в январе двадцать первого. 
+				Первая странность: у графика тяжелой волны должна быть острая вершина.
 			</p>
-			
-			<img class="col-10"  
-			src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_04.png">
-		
+
+			<img class="col-10"
+				src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_02.png">
+
+			<p class="text-start">
+				2. После прохождения плато и перед началом резкого падения случился локальный горбик заболеваемости.
+				Который совпадает с первым пиком модной процедуры. Как уже сказал, данные по уколам на первые месяцы
+				недостоверны, и выделение этой взаимосвязи можно легко посчитать притянутым за уши.
+				<br />
+			</p>
+			<p class="fst-italic fw-bold text-warning bg-dark">
+				Вторая странность - соответствие локального пика процедуры с локальным пиком заболеваемости.
+			</p>
+
+			<img class="col-10"
+				src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_03.png">
+
+			<p class="text-start">
+				3. С конца декабря по середину января идет снижение смертности. Которое внезапно сменяется на рост, и за
+				неделю, к концу января, дорастает до декабрьского максимума. Хотя соответствующего по масштабу изменения
+				графика заболеваемости нету. Есть только очень маленький горбик месяц назад. Разница в смертности между
+				январским минимумом и максимумом смертности составляет 15 процентов. Тогда как соответствующее изменение
+				графика заболеваемости составляет только 3%.
+			</p>
+			<p class="fst-italic fw-bold text-warning bg-dark">
+				Третья странность - пятикратное несоответствие масштабов изменений графиков смертности и заболеваемости
+				в январе двадцать первого.
+			</p>
+
+			<img class="col-10"
+				src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_04.png">
+
 			<p class="text-start">
 				4.
 			</p>
 			<p class="fst-italic fw-bold text-warning bg-dark">
-				Четвертая странность - январский пик смертности день в день соответствует увеличению скорости обработки населения.				
+				Четвертая странность - январский пик смертности день в день соответствует увеличению скорости обработки
+				населения.
 			</p>
-			
 
-			<img class="col-10"  
-			src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_05.png">
-		
+
+			<img class="col-10"
+				src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_05.png">
+
 
 			<p class="text-start">
-				5. С конца декабря заболеваемость снижается линейно. Сначала смертность идет вслед за заболеваемостью. Но вдруг в середине января случается задержка на целый месяц и график смертности начинает опережать заболеваемость.
-</p>
-<p class="fst-italic fw-bold text-warning bg-dark">
-	Пятая странность - месячная задержка в соответствии графиков смертности и заболеваемости.
-</p>
+				5. С конца декабря заболеваемость снижается линейно. Сначала смертность идет вслед за заболеваемостью.
+				Но вдруг в середине января случается задержка на целый месяц и график смертности начинает опережать
+				заболеваемость.
+			</p>
+			<p class="fst-italic fw-bold text-warning bg-dark">
+				Пятая странность - месячная задержка в соответствии графиков смертности и заболеваемости.
+			</p>
 
 
-<img class="col-10"  
+			<img class="col-10"
 				src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_06.png">
-			
-				<p class="text-start">
-					6. С середины марта по середину июня заболеваемость идет горизонтально. Тогда как на графике смертности на этом участке ясно видны три горба. Которые соответствуют таким же изменениям зеленого графика.
-	</p>
-	<p class="fst-italic fw-bold text-warning bg-dark">
-		Шестая странность - совпадение частоты вакцинации и смертности.
-	</p>
-	
-	<img class="col-10"  
-	src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_07.png">
+
+			<p class="text-start">
+				6. С середины марта по середину июня заболеваемость идет горизонтально. Тогда как на графике смертности
+				на этом участке ясно видны три горба. Которые соответствуют таким же изменениям зеленого графика.
+			</p>
+			<p class="fst-italic fw-bold text-warning bg-dark">
+				Шестая странность - совпадение частоты вакцинации и смертности.
+			</p>
+
+			<img class="col-10"
+				src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_07.png">
 
 
-	<p class="text-start">
-		7. Восьмого июня внезапно пушечным ядром в небо улетает заболеваемость. И буквально в течении недели вслед за заболеваемостью взлетает и смертность. Хотя нормальная задержка в два раза больше - две недели. Мне отчетливо помнится, что именно в это время начинается остервенелая кампания пропаганды добровольно-насильственной вакцинации, под угрозой голодной смерти в нищете под забором. Это крайне подозрительно, что рукотворное протыкивание так аккуратно кореллирует с природно-естественными графиками смертности и заболеваемости.
-</p>
-<p class="fst-italic fw-bold text-warning bg-dark">
-	
-	Седьмая странность - одновременное резкое ускорение смертности, заболеваемости и вакцинации.
-</p>
+			<p class="text-start">
+				7. Восьмого июня внезапно пушечным ядром в небо улетает заболеваемость. И буквально в течении недели
+				вслед за заболеваемостью взлетает и смертность. Хотя нормальная задержка в два раза больше - две недели.
+				Мне отчетливо помнится, что именно в это время начинается остервенелая кампания пропаганды
+				добровольно-насильственной вакцинации, под угрозой голодной смерти в нищете под забором. Это крайне
+				подозрительно, что рукотворное протыкивание так аккуратно кореллирует с природно-естественными графиками
+				смертности и заболеваемости.
+			</p>
+			<p class="fst-italic fw-bold text-warning bg-dark">
 
-<img class="col-10"  
+				Седьмая странность - одновременное резкое ускорение смертности, заболеваемости и вакцинации.
+			</p>
+
+			<img class="col-10"
 				src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_08.png">
-			
-				<p class="text-start">
-					8. Двенадцатого июля зеленый график искусственного прививания достигает максимума и начинается его снижение. Примерно в это же время в СМИ появились новости из разных мест о недостатке препарата, что Спутника не хватает на всех желающих. И примерно тогда же начали прорывать информационную блокаду вопли жертв и их родственников, если сами жертвы, по причине летального исхода, уже ни на что не могли никому пожаловаться.  Чрез пару дней, шестнадцатого июля, график заболеваемости также достигает пика и начинает снижаться. А еще через пару дней, двадцатого июля график смертности прекращает свой стремительный рост, проходит через точку перелома и выходит на горизонтальное плато.
-	</p>
-	<p class="fst-italic fw-bold text-warning bg-dark">
-		Восьмая странность - совпадение точек перегиба всех трех графиков в июле двадцать первого.
-	</p>
-	
 
-	<img class="col-10"  
-	src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_09.png">
-
-	<p class="text-start">
-		9. С семнадцатого июля и по настоящее время, по двадцать седьмое августа, график смертности идет равномерно и горизонтально. Тогда как заболеваемость все это время убывает. Это статистическая аномалия. Смертность, во-первых, должна отставать на две недели от заболеваемости. А во-вторых, горизонтальному графику смертности должен соответствовать такой же продолжительности горизонтальный участок заболеваемости.
-</p>
-<p class="fst-italic fw-bold text-warning bg-dark">
-	Девятая странность - стабильная горизонтальность графика смертности в течении сорока дней
-</p>
+			<p class="text-start">
+				8. Двенадцатого июля зеленый график искусственного прививания достигает максимума и начинается его
+				снижение. Примерно в это же время в СМИ появились новости из разных мест о недостатке препарата, что
+				Спутника не хватает на всех желающих. И примерно тогда же начали прорывать информационную блокаду вопли
+				жертв и их родственников, если сами жертвы, по причине летального исхода, уже ни на что не могли никому
+				пожаловаться. Чрез пару дней, шестнадцатого июля, график заболеваемости также достигает пика и начинает
+				снижаться. А еще через пару дней, двадцатого июля график смертности прекращает свой стремительный рост,
+				проходит через точку перелома и выходит на горизонтальное плато.
+			</p>
+			<p class="fst-italic fw-bold text-warning bg-dark">
+				Восьмая странность - совпадение точек перегиба всех трех графиков в июле двадцать первого.
+			</p>
 
 
+			<img class="col-10"
+				src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_09.png">
 
-<img class="col-10"  
+			<p class="text-start">
+				9. С семнадцатого июля и по настоящее время, по двадцать седьмое августа, график смертности идет
+				равномерно и горизонтально. Тогда как заболеваемость все это время убывает. Это статистическая аномалия.
+				Смертность, во-первых, должна отставать на две недели от заболеваемости. А во-вторых, горизонтальному
+				графику смертности должен соответствовать такой же продолжительности горизонтальный участок
+				заболеваемости.
+			</p>
+			<p class="fst-italic fw-bold text-warning bg-dark">
+				Девятая странность - стабильная горизонтальность графика смертности в течении сорока дней
+			</p>
+
+
+
+			<img class="col-10"
 				src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_10.png">
-			
-<p class="text-start">
-	10.  смертности в двадцатом году составлял 2 процента. А в двадцать первом уже 4 процента. Повышение в два раза! Эту цифру я считаю самым надежным доказательством моей гипотезе о смертельной опасности Спутника, которая с течением времени и не собирается снижаться. Если в развитых странах всплеск смертности от прививки приходится только на первую пару-тройку месяцев, то россиянский Спутник собирает свою кровавую жатву вот уже более полугода со стабильной надежностью и эффективностью.
-</p>
-<p class="fst-italic fw-bold text-warning bg-dark">
-	Десятая странность - коэффициент смертности во время прививочной кампании увеличивается в два раза.
-</p>
 
-<img class="col-10"  
+			<p class="text-start">
+				10. смертности в двадцатом году составлял 2 процента. А в двадцать первом уже 4 процента. Повышение в
+				два раза! Эту цифру я считаю самым надежным доказательством моей гипотезе о смертельной опасности
+				Спутника, которая с течением времени и не собирается снижаться. Если в развитых странах всплеск
+				смертности от прививки приходится только на первую пару-тройку месяцев, то россиянский Спутник собирает
+				свою кровавую жатву вот уже более полугода со стабильной надежностью и эффективностью.
+			</p>
+			<p class="fst-italic fw-bold text-warning bg-dark">
+				Десятая странность - коэффициент смертности во время прививочной кампании увеличивается в два раза.
+			</p>
+
+			<img class="col-10"
 				src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_11.png">
-				<br/>
-				<img class="col-10"  
+			<br />
+			<img class="col-10"
 				src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_12.png">
-			
-				<p class="text-start">
-					11. Удивительно стабильный и высокий уровень эпидемии во все время вакцинирования. В россиянии, как известно, применяется только отечественные, импортозамещенные препараты. В основном Спутник, и еще немного других отечественных вакцин.  А в Европе используются совсем другие вакцины, западного производства и разработки. <br/>
-	Если в других странах, невзирая на все отклонения, график смертности сохраняет тренд на снижение с декабрьского пика второй волны и к началу августа опускается до уровня около нуля, то на богоспасенной родине смертность за февраль опустилась на треть от максимума и дальше всю дорогу демонстрирует несгибаемую путинскую стабильность. <br/>
-	
-</p>
-<p class="fst-italic fw-bold text-warning bg-dark">
-	Одиннадцата странность - стабильно высокий и раномерный характер эпидемии во все время кампании тыканья.
-</p>
+
+			<p class="text-start">
+				11. Удивительно стабильный и высокий уровень эпидемии во все время вакцинирования. В россиянии, как
+				известно, применяется только отечественные, импортозамещенные препараты. В основном Спутник, и еще
+				немного других отечественных вакцин. А в Европе используются совсем другие вакцины, западного
+				производства и разработки. <br />
+				Если в других странах, невзирая на все отклонения, график смертности сохраняет тренд на снижение с
+				декабрьского пика второй волны и к началу августа опускается до уровня около нуля, то на богоспасенной
+				родине смертность за февраль опустилась на треть от максимума и дальше всю дорогу демонстрирует
+				несгибаемую путинскую стабильность. <br />
+
+			</p>
+			<p class="fst-italic fw-bold text-warning bg-dark">
+				Одиннадцата странность - стабильно высокий и раномерный характер эпидемии во все время кампании тыканья.
+			</p>
 
 
 		</div>
 
 		<div class="page_block">
-			<h3>Что же делать?</h3>			
+			<h3>Цена Победы над эпидемией</h3>
+
+
 			<p class="text-start">
-				Если в двух словах, то надо всю грядущую госдуму превратить в сборище негодяев, трусов, непонятных проходимцев, всем отвратительной дряни. Для чего надо всем кандидатам задать одинаковый список конкретных закрытых вопросов и жестко настаивать на конкретном ответе ДА или НЕТ. Для какового флешмоба мне и требуются тысяча волонтеров. Пара десятков менеджеров на фулл-тайме, для руководства всей этой толпой. И деньги, чтоб их всех смотивировать на рабочее настроение.
+				Опираясь на весь представленный в видео материал, можно сделать такой же графический вывод про то, что это все значит. Надо отделить воздействие искусственного фактора от естественного.
+			</p>
+
+			<p class="text-start">
+
+			Из примеров быстрой европейской первой волны и украинской затяжной второй волны понятна ожидаемая форма
+			графика, которую должна иметь естественная волна. Во-первых, левый участок нарастания по форме соответствует
+			правому участку убывания. Во-вторых, вторая волна, в отличии от первой, имеет отлогие подошвы с обеих
+			сторон, т.е. длинные участки медленного разгорания и затухания.
+		</p>
+		
+		<p class="text-start">
+
+			Я на одинаковой высоте взял соответствующие точки на участках роста и убывания, записал их координаты,
+			которые показывает редактор, и у меня получилось, что расстояние по горизонтали справа и слева между точками
+			сверху и снизу одинаковое с точностью до пикселя, т.е. углы наклона в верхней части графика одинаковы. А
+			значит, и участки подошвы должны быть одинаковы.<br/>
+			Я ничего не подгадывал, одинаковые расстояния действительно получились с первого раза. Я сам удивился.
+		</p>
+
+		<img class="col-10"
+		src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/expect_02.png">
+		
+		<p class="text-start">
+
+			Для наглядности, обрисовываю черным ожидаемый график смертности, каким он должен быть при естественном
+			развитии событий. И тогда получается, что вся площадь, оказавшаяся выше черной линии, имеет искусственное
+			происхождение. 
+		</p>
+		<img class="col-10"
+		src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/expect_03.png">
+		<p class="text-start">
+			Для наглядности, обвожу этот участок красным.<br/>
+			Теперь вопрос на глазомер. Скажите, во сколько раз площадь закрашенной черным поверхности отличается от
+			красной? Они равны? Или черная больше в полтора раза?<br/>
+		</p>
+		<img class="col-10"
+		src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/expect_04.png">
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<p class="text-start">
+			Нет. Они даже примерно не равны. Потому что на сейчас, на 28 августа двадцать первого года, количество
+			обработанного населения составляет 30 %. А по плану надо довести цифру до шестидесяти, чтобы выполнить
+			распоряжение западных Хозяев и сравняться с европейским уровнем в 60%. Площадь красной зоны надо увеличить в
+			2 раза.
+		</p>
+		<br/>
+		<br/>
+		<br/>
+		<img class="col-10"
+		src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/expect_05.png">
+		
+		<p class="text-start">
+
+
+			И если даже предположить, что сейчас действительно идет третья волна, которая имеет естественное
+			происхождение, а не является следствием полицейского усиления борьбы с ковидлой, то и в этом случае
+			количество искусственно-принудительных смертей не снижается ниже 10% от естественных. А 10% я считаю
+			максимально допустимой ценой, которую можно заплатить ради предупреждения и профилактики. Когда же вред от
+			профилактических мер равен вреду от самой напасти, или тем более когда вред больше в 3 раза, то это не
+			профилактика. Это геноцид. Простите за громкое слово.
+		</p>
+		<img class="col-10"
+		src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/expect_06.png">
+		
+
+		<p class="text-start">
+				Да, геноцид. И не важно, в действительности, является ли геноцид результатом злонамеренной воли, или
+				из-за чудовищной некомпетентности руководящих лиц. Не важно. В счет идет только конкретной количество
+				смертей. Халатность, напоминаю, тоже прописана в уголовном кодексе:
+			</p>
+
+			<p class="text-start ">
+				<span class="fw-bold">УК РФ Статья 293. Халатность</span><br />
+				3. Деяние, предусмотренное частью первой настоящей статьи, повлекшее по неосторожности смерть двух или
+				более лиц,<br />
+				наказывается принудительными работами на срок до пяти лет с лишением права занимать определенные
+				должности или заниматься определенной деятельностью на срок до трех лет или без такового либо лишением
+				свободы на срок до семи лет с лишением права занимать определенные должности или заниматься определенной
+				деятельностью на срок до трех лет или без такового.
+			</p>
+
+			<p class="text-start">
+				Только вряд ли те, кто придумывал эту статью, под словами "смерть двух или более лиц" имели в ввиду
+				что-то большее, чем количество пассажиров в автобусе, где пьяный механик не докрутил гайку в тормозах.
+				Если халатность стала причиной десятков тысяч смертей, то она должна обзываться более жестким термином,
+				чем просто халатное отношение к своим должностным обязанностям.
+			</p>
+
+
+
+		</div>
+
+		<div class="page_block">
+			<h3>Что же делать?</h3>
+			<p class="text-start">
+				Если в двух словах, то сначала надо всю грядущую госдуму превратить в сборище негодяев, трусов,
+				непонятных проходимцев, всем отвратительной дряни. Для чего надо всем кандидатам задать одинаковый
+				список конкретных закрытых вопросов и жестко настаивать на конкретном ответе ДА или НЕТ. Для какового
+				флешмоба мне и требуется тысяча волонтеров. Пара десятков менеджеров на фулл-тайме, для руководства всей
+				этой толпой. И деньги, чтоб их всех смотивировать на рабочее настроение.
 			</p>
 			<p class="text-start">
-				О, это будет интереснейшее треш-шапито)) Я отсюда вижу совершенно фантасмагорические видяшки, как народные "депутаты" с заячьей прытью станут скакать по кустам, сбегая от народа. Как они станут трусливо выглядывать в щелочку двери и перебежками, украдкой подбираться к машины, чтоб там, за тонированными стеклами наконец почувствовать себя в безопасности от своих же избирателей. Как интервьюеров-волонтеров будут с матом толкать охранники, не подпуская собственно народ к общению с "представителем его интересов"... 
+				О, это будет интереснейшее треш-шапито)) Я отсюда вижу совершенно фантасмагорические видяшки, как
+				народные "депутаты" с заячьей прытью станут скакать по кустам, сбегая от народа. Как они станут трусливо
+				выглядывать в щелочку двери и перебежками, украдкой подбираться к машины, чтоб там, за тонированными
+				стеклами наконец почувствовать себя в безопасности от своих же избирателей. Как интервьюеров-волонтеров
+				будут с матом толкать охранники, не подпуская собственно народ к общению с "представителем его
+				интересов"...
 			</p>
 			<p class="text-start">
-				Я клянусь, это будет прекрасно!				
+				Я клянусь, это будет прекрасно!
+			</p>
+			<p class="text-start">
+				
+			</p>
+			<p class="text-start">
+				PS: Еще раз напоминаю, что всем ждунам "окна возможностей" настоятельно рекомендуецца продолжать ждать еще год. Если у меня ничего не получится, то лишь тогда опять настанет ваша очередь пытаться. <br />
+Более того, это будет воровством революции. А чем закончилась прошлая уворованная в ноябре Февральская революция, вам всем должно быть хорошо известно. Да и политзаключенный Алексей Навальный популярно всех убедил, что ворьё является сейчас главным врагом народа вообще и русских в частности.
+			</p>
+			<p class="text-start">
+				Давай-те же делом покажем взбалмошным украинцам и бестолковым белорусам, что мы не зря называемся великороссами. Что мы действительно имеем право носить с городостью это торжественное самоименование.
+			</p>
+			<p class="text-start">
+				Слава России!
 			</p>
 		</div>
 
@@ -284,28 +466,34 @@
 			<h3>Источники данных</h3>
 			<h5>Смертность</h5>
 			<p>
-				<a href="https://github.com/CSSEGISandData/COVID-19/raw/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv">https://github.com/<wbr/>CSSEGISandData/COVID-19/raw/master/<wbr/>csse_covid_19_data/<wbr/>csse_covid_19_time_series/<wbr/>time_series_covid19_deaths_global.csv</a>
+				<a
+					href="https://github.com/CSSEGISandData/COVID-19/raw/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv">https://github.com/<wbr/>CSSEGISandData/COVID-19/raw/master/<wbr/>csse_covid_19_data/<wbr/>csse_covid_19_time_series/<wbr/>time_series_covid19_deaths_global.csv</a>
 			</p>
 			<h5> Новые случаи</h5>
 			<p>
-				<a href="https://github.com/owid/covid-19-data/raw/master/public/data/jhu/new_cases.csv">https://github.com/owid/<wbr/>covid-19-data/raw/master/<wbr/>public/data/<wbr/>jhu/new_cases.csv</a>
+				<a
+					href="https://github.com/owid/covid-19-data/raw/master/public/data/jhu/new_cases.csv">https://github.com/owid/<wbr/>covid-19-data/raw/master/<wbr/>public/data/<wbr/>jhu/new_cases.csv</a>
 			</p>
 			<h5>Вакцинация</h5>
 			<p>
-				<a href="https://github.com/owid/covid-19-data/raw/master/public/data/vaccinations/vaccinations.csv">https://github.com/owid/covid-19-data/<wbr/>raw/master/public/data/<wbr/>vaccinations/vaccinations.csv</a>
+				<a
+					href="https://github.com/owid/covid-19-data/raw/master/public/data/vaccinations/vaccinations.csv">https://github.com/owid/covid-19-data/<wbr/>raw/master/public/data/<wbr/>vaccinations/vaccinations.csv</a>
 			</p>
 		</div>
 	</div>
 </div>
 
 <footer class="fixed-bottom">
-    <div class="soc_logo_wrapper">
-		<a href="https://t.me/kon_soc"><img class="soc_logo"  src="https://cdn.cdnlogo.com/logos/t/37/telegram.svg"></a>
-		<a href="https://www.youtube.com/channel/UCvsRa4DoYhJmQv7_7fqr04Q"><img class="soc_logo"  src="https://cdn.cdnlogo.com/logos/y/57/youtube-icon.svg"></a>
-		<a href="https://vimeo.com/user149798668"><img class="soc_logo"  
-			src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/img/logos/vimeo-tile.svg"></a>
-		<a href="https://patreon.com/konsoc"><img class="soc_logo" src="https://cdn.cdnlogo.com/logos/p/39/patreon.svg"></a>
-		<a href="https://donationalerts.com/r/konsoc"><img class="soc_logo" src="https://www.donationalerts.com/img/header/logo.svg"></a>
+	<div class="soc_logo_wrapper">
+		<a href="https://t.me/kon_soc"><img class="soc_logo" src="https://cdn.cdnlogo.com/logos/t/37/telegram.svg"></a>
+		<a href="https://www.youtube.com/channel/UCvsRa4DoYhJmQv7_7fqr04Q"><img class="soc_logo"
+				src="https://cdn.cdnlogo.com/logos/y/57/youtube-icon.svg"></a>
+		<a href="https://vimeo.com/user149798668"><img class="soc_logo"
+				src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/img/logos/vimeo-tile.svg"></a>
+		<a href="https://patreon.com/konsoc"><img class="soc_logo"
+				src="https://cdn.cdnlogo.com/logos/p/39/patreon.svg"></a>
+		<a href="https://donationalerts.com/r/konsoc"><img class="soc_logo"
+				src="https://www.donationalerts.com/img/header/logo.svg"></a>
 	</div>
 	<div class="soc_logo_wrapper">
 		© авг. 2021
