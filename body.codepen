@@ -1,0 +1,162 @@
+
+<div id="load_curtain">
+	<div id="load_wrapper">
+		<h3> Загрузка данных</h3>
+		<p>
+			смертность: <span id="spn_load_mortality">0</span> %<br>
+			новые случаи: <span id="spn_load_newcases">0</span> %<br>
+			вакцинация: <span id="spn_load_vaccination">0</span> %<br>
+		</p>
+	</div>
+</div>
+
+
+<header>
+	<!-- ============= COMPONENT ============== -->
+	<nav class="navbar navbar-expand-lg navbar-dark ">
+		<div class="container-fluid">
+
+			<div class="soc_logo_wrapper">
+				<a href="https://t.me/kon_soc"><img class="soc_logo"  src="https://cdn.cdnlogo.com/logos/t/37/telegram.svg"></a>
+				<a href="https://www.youtube.com/channel/UCvsRa4DoYhJmQv7_7fqr04Q">
+					<img class="soc_logo"  src="https://cdn.cdnlogo.com/logos/y/57/youtube-icon.svg"></a>
+				<a href="https://patreon.com/konsoc">
+					<img class="soc_logo" src="https://cdn.cdnlogo.com/logos/p/39/patreon.svg"></a>
+				<a href="https://donationalerts.com/r/konsoc">
+					<img class="soc_logo" src="https://www.donationalerts.com/img/header/logo.svg"></a>
+			</div>
+			<div class="header-logo">
+				<a href="/" class="nav-link nav-logo"><span class="logo-up">KonSoc</span><br>
+					<span class="logo-sub">ПРБ/РНГ/Консорция&nbsp;социальных&nbsp;канонов</span>
+				</a>
+			</div >
+		</div> <!-- container-fluid.// -->
+	</nav>
+
+	<!-- ============= COMPONENT END// ============== -->
+</header>
+
+<div class="page_wrapper" id="curtain_body">
+	<h1>Очень общий сравнительный анализ заболеваемости, смертности и вакцинации от COVID-19</h1>
+	<div class="chart_container covid_container" style="display: inline-block">
+
+		<div id="chart_covid" class="chart_div"></div>
+
+		<div id="chart_vaccination_percent" class="chart_div"></div>
+		<div >
+			<label class="form-check-label"><input class="form-check-input" type="radio" name="chart_accuracy" value="4_round"> среднее за 4д. </label>
+			<label class="form-check-label"><input class="form-check-input" type="radio" name="chart_accuracy" value="7_round"> среднее за 7д. </label>
+			<label class="form-check-label"><input class="form-check-input" type="radio" name="chart_accuracy" value="7_round_frame"  checked> среднее за 7д. "падающим окном"</label>
+			<label class="form-check-label"><input class="form-check-input" type="radio" name="chart_accuracy" value="as_is"> как есть </label>
+			<div class="chart_size_wrap">
+				<label for="slct_chart_size">Размер графика: </label>
+				<select class="form-select form-select-sm" aria-label=".form-select-sm example" id="slct_chart_size">
+					<option data-height="250" data-width="350" >250x350</option>
+					<option data-height="350" data-width="550" >350x550</option>
+					<option data-height="450" data-width="850" selected>450x850</option>
+					<option data-height="700" data-width="1200" >700x1200</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<!-- Demo GPD -->
+	<div class="map_container covid_container" style="display: inline-block">
+		<div id="svgMapDeaths"></div>
+		<div class="row slide_date_cap">
+			<p class="p_date_cap p_left"><span id="spnDateBegin"></span> </p><p class="p_date_cap p_center"><span id="spnDateCurrent"></span></p>
+			<p class="p_date_cap p_right"> <span id="spnDateEnd"></span></p>
+		</div>
+		<label for="dateRange"></label><input type="range" class="form-range" min="1" max="100" value="100"  id="dateRange">
+
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="input-group">
+					<label><input type="checkbox" class="form-check-input chk_map"  id="chk_map_relative">относительно населения</label>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="input-group">
+					<label for="slct_map_time">Время: </label>
+					<select class="ms-2 form-select form-select-sm" aria-label=".form-select-sm example" id="slct_map_time">
+						<option data-time="7days" selected>за 7 дней</option>
+						<option data-time="all_time">за все время</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="row-not">
+			<label><input type="checkbox" class="form-check-input chk_map"  id="chk_map_europe">Европа</label>
+			<label><input type="checkbox" class="form-check-input chk_map"  id="chk_map_asia">Азия</label>
+		</div>
+		<div class="map_control_data_container">
+			<label class="form-check-label"><input class="form-check-input" type="radio" name="map_radio_data" value="death" checked> Смертность </label>
+			<label class="form-check-label"><input class="form-check-input" type="radio" name="map_radio_data" value="new_case" > Заболеваемость </label>
+			<label class="form-check-label"><input class="form-check-input" type="radio" name="map_radio_data" value="vaccination" > Вакцинация </label>
+			<label class="form-check-label"><input class="form-check-input" type="radio" name="map_radio_data" value="death_rate" > Коэффициент смертности </label>
+		</div>
+	</div>
+	<div class="country_info_wrapper covid_container" >
+		<div class="country_info_container covid_container" id="country_info_container" >
+			<h6>Статистика по стране </h6>
+			<div class="cntr_info_line row">
+				<div class="cntr_info_param col"> kjlkjlklkj:
+				</div>
+				<div class="cntr_info_val col"> 78798798
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="block_container">
+		<div class="page_block">
+			По Китаю данные недостоверны ;)
+		</div>
+
+		<div class="page_block">
+			<div class="donate_wrapper">
+				<h4>Помочь Проекту:</h4>
+				<h5>Patreon</h5>
+				<p>
+					<a href="https://patreon.com/konsoc"><img class="donate_logo" src="https://cdn.cdnlogo.com/logos/p/39/patreon.svg">https://patreon.com/konsoc</a>
+				</p>
+				<h5> Donation Alerts</h5>
+				<p>
+					<a href="https://donationalerts.com/r/konsoc"><img class="donate_logo" src="https://www.donationalerts.com/img/header/logo.svg">https://donationalerts.com/r/konsoc</a>
+				</p>
+				<h5>BitCoin</h5>
+				<p>
+					<img class="donate_logo" src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg">
+					bc1q65aklpyt8dewxl03upqscfjfapsg6m5mn4kelg
+				</p>
+			</div>
+		</div>
+		<div class="page_block">
+			<h3>Источники данных</h3>
+			<h5>Смертность</h5>
+			<p>
+				<a href="https://github.com/CSSEGISandData/COVID-19/raw/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv">https://github.com/<wbr/>CSSEGISandData/COVID-19/raw/master/<wbr/>csse_covid_19_data/<wbr/>csse_covid_19_time_series/<wbr/>time_series_covid19_deaths_global.csv</a>
+			</p>
+			<h5> Новые случаи</h5>
+			<p>
+				<a href="https://github.com/owid/covid-19-data/raw/master/public/data/jhu/new_cases.csv">https://github.com/owid/<wbr/>covid-19-data/raw/master/<wbr/>public/data/<wbr/>jhu/new_cases.csv</a>
+			</p>
+			<h5>Вакцинация</h5>
+			<p>
+				<a href="https://github.com/owid/covid-19-data/raw/master/public/data/vaccinations/vaccinations.csv">https://github.com/owid/covid-19-data/<wbr/>raw/master/public/data/<wbr/>vaccinations/vaccinations.csv</a>
+			</p>
+		</div>
+	</div>
+</div>
+
+<footer class="fixed-bottom">
+    <div class="soc_logo_wrapper">
+		<a href="https://t.me/kon_soc"><img class="soc_logo"  src="https://cdn.cdnlogo.com/logos/t/37/telegram.svg"></a>
+		<a href="https://www.youtube.com/channel/UCvsRa4DoYhJmQv7_7fqr04Q"><img class="soc_logo"  src="https://cdn.cdnlogo.com/logos/y/57/youtube-icon.svg"></a>
+		<a href="https://patreon.com/konsoc"><img class="soc_logo" src="https://cdn.cdnlogo.com/logos/p/39/patreon.svg"></a>
+		<a href="https://donationalerts.com/r/konsoc"><img class="soc_logo" src="https://www.donationalerts.com/img/header/logo.svg"></a>
+	</div>
+	<div class="soc_logo_wrapper">
+		© авг. 2021
+	</div>
+
+</footer>
