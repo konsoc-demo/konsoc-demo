@@ -7,28 +7,70 @@
 			вакцинация: <span id="spn_load_vaccination">0</span> %<br>
 		</p>
 	</div>
+
+
+
+#load_curtain .icon{	
+	width:30px;
+	height:30px;  
+}
+
+#load_curtain .ok{	
+	display: none;
+}
+
+#load_curtain .load{
+	animation: rotate 1.5s linear infinite; 	
+}
+
+@keyframes rotate{
+	to{ transform: rotate(-360deg); }
+}
+
+
+
 </div-->
+
+<style>
+#load_curtain .icon{	
+	width:30px;
+	height:30px;  
+}
+
+#load_curtain .ok{	
+	display: none;
+}
+
+#load_curtain .load{
+	animation: rotate 1.5s linear infinite; 	
+}
+
+@keyframes rotate{
+	to{ transform: rotate(-360deg); }
+}
+</style>
 
 <div id="load_curtain">
 	<div id="load_wrapper">
 		<h3> Загрузка данных</h3>
 		<p class="mortality">
-			смертность: <img src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/img/icons/load.svg"
+			смертность: <img src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/img/icons/reload.svg"
 				class="icon load" />
 			<img src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/img/icons/ok.svg" class="icon ok" />
 		</p>
 		<p class="newcases">
-			новые случаи: <img src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/img/icons/load.svg"
+			новые случаи: <img src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/img/icons/reload.svg"
 				class="icon load" />
 			<img src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/img/icons/ok.svg" class="icon ok" />
 		</p>
 		<p class="vaccination">
-			вакцинация: <img src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/img/icons/load.svg"
+			вакцинация: <img src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/img/icons/reload.svg"
 				class="icon load" />
 			<img src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/img/icons/ok.svg" class="icon ok" />
 		</p>
 	</div>
 </div>
+
 
 <header>
 	<!-- ============= COMPONENT ============== -->
@@ -36,24 +78,20 @@
 		<div class="container-fluid">
 
 			<div class="soc_logo_wrapper">
-				<a href="https://t.me/kon_soc"><img class="soc_logo"
-						src="https://cdn.cdnlogo.com/logos/t/37/telegram.svg"></a>
-				<a href="https://www.youtube.com/channel/UCvsRa4DoYhJmQv7_7fqr04Q"><img class="soc_logo"
-						src="https://cdn.cdnlogo.com/logos/y/57/youtube-icon.svg"></a>
-				<a href="https://vimeo.com/user149798668"><img class="soc_logo"
-						src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/img/logos/vimeo-tile.svg"></a>
-				&nbsp;&nbsp;&nbsp;
-				<a href="https://patreon.com/konsoc"><img class="soc_logo"
-						src="https://cdn.cdnlogo.com/logos/p/39/patreon.svg"></a>
+				<a href="https://t.me/kon_soc_can"><img class="soc_logo"  src="https://cdn.cdnlogo.com/logos/t/37/telegram.svg"></a>
+				<a href="https://www.youtube.com/channel/UCvsRa4DoYhJmQv7_7fqr04Q">
+					<img class="soc_logo"  src="https://cdn.cdnlogo.com/logos/y/57/youtube-icon.svg"></a>
+				<a href="https://patreon.com/konsoc">
+					<img class="soc_logo" src="https://cdn.cdnlogo.com/logos/p/39/patreon.svg"></a>
 				<a href="https://donationalerts.com/r/konsoc">
 					<img class="soc_logo" src="https://www.donationalerts.com/img/header/logo.svg"></a>
 			</div>
 			<div class="header-logo">
-				<div class="nav-link nav-logo">
-					<span class="logo-up">KonSoc</span><br>
+				<div class="nav-link nav-logo"><span class="logo-up">KonSoc</span><br>
 					<span class="logo-sub">ПРБ/РНГ/Консорция&nbsp;социальных&nbsp;канонов</span>
 				</div>
-			</div>
+			</div >
+
 		</div> <!-- container-fluid.// -->
 	</nav>
 
@@ -527,7 +565,7 @@
 
 <footer class="fixed-bottom">
 	<div class="soc_logo_wrapper">
-		<a href="https://t.me/kon_soc"><img class="soc_logo" src="https://cdn.cdnlogo.com/logos/t/37/telegram.svg"></a>
+		<a href="https://t.me/kon_soc_can"><img class="soc_logo" src="https://cdn.cdnlogo.com/logos/t/37/telegram.svg"></a>
 		<a href="https://www.youtube.com/channel/UCvsRa4DoYhJmQv7_7fqr04Q"><img class="soc_logo"
 				src="https://cdn.cdnlogo.com/logos/y/57/youtube-icon.svg"></a>
 		<a href="https://vimeo.com/user149798668"><img class="soc_logo"
