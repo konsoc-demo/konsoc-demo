@@ -1811,10 +1811,13 @@ function parseData(){
 $.ajax({
 	url: urlCSV_deaths ,
 	success: function( result ) {
+		var t = $('#load_wrapper');
+		t.find('.mortality .load').hide();
+		t.find('.mortality .ok').show();
 		dataDeath = result;
 		dataLoaded( );
 	},
-	xhr: function()
+	xh__r: function()
 	{
 		var xhr = new window.XMLHttpRequest();
 		// прогресс скачивания с сервера
@@ -1832,11 +1835,14 @@ $.ajax({
 $.ajax({
 	url: urlCSV_new_case,
 	success: function( result ) {
+		var t = $('#load_wrapper');
+		t.find('.newcases .load').hide();
+		t.find('.newcases .ok').show();
 		dataNewCases = result;
 		dataLoaded( );
 
 	},
-	xhr: function()
+	xh__r: function()
 	{
 		var xhr = new window.XMLHttpRequest();
 		// прогресс скачивания с сервера
@@ -1858,10 +1864,13 @@ $.ajax({
 $.ajax({
 	url: urlCSV_vaccinations ,
 	success: function( result ) {
+		var t = $('#load_wrapper');
+		t.find('.vaccination .load').hide();
+		t.find('.vaccination .ok').show();
 		dataVac = result;
 		dataLoaded( );
 	},
-	xhr: function()
+	xh__r: function()
 	{
 		var xhr = new window.XMLHttpRequest();
 		// прогресс скачивания с сервера

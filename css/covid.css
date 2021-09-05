@@ -27,6 +27,24 @@ body {
 	-webkit-tap-highlight-color: transparent;
 }
 
+
+#load_curtain .icon{	
+	width:30px;
+	height:30px;  
+}
+
+#load_curtain .ok{	
+	display: none;
+}
+
+#load_curtain .load{
+	animation: rotate 1.5s linear infinite; 	
+}
+
+@keyframes rotate{
+	to{ transform: rotate(360deg); }
+}
+
 .navbar-collapse {
 	flex-grow: 0 !important;
 	line-height: 1rem;
