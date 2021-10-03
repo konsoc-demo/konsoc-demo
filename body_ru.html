@@ -1,0 +1,2193 @@
+<!-- div id="page_body"-->
+
+<header>
+	<!-- ============= COMPONENT ============== -->
+	<nav class="navbar navbar-expand-xl navbar-dark ">
+		<div class="container-fluid">
+
+			<div class="soc_logo_wrapper">
+				<a href="https://t.me/kon_soc_can"><img class="soc_logo" src="/img/logos/telegram.svg"></a>
+				<a href="https://vimeo.com/user149798668">
+					<img class="soc_logo" src="/img/logos/vimeo-tile-white.svg"></a>
+				<a href="https://patreon.com/konsoc">
+					<img class="soc_logo" src="/img/logos/patreon.svg"></a>
+				<a href="https://donationalerts.com/r/konsoc"><img class="soc_logo"
+						src="/img/logos/donationalerts.svg"></a>
+			</div>
+			<div class="header-logo">
+				<div href="/" class="nav-link nav-logo"><span class="logo-up">KonSoc</span><br>
+					<span class="logo-sub">ПРБ/РНГ/Консорция&nbsp;социальных&nbsp;канонов</span>
+				</div>
+			</div>
+
+			<div class="lng_wrap d-flex nav_mobile">
+				<div class="dropdown nav_mobile">
+					<a class="btn btn_lng dropdown-toggle" href="#" target="_blank"  role="button" 
+					id="btn_current_locale_mobile" data-locale="ru" data-bs-toggle="dropdown" aria-expanded="false">
+						<img class="lng_flag"
+							src='https://cdn.jsdelivr.net/npm/flag-icon-css@2.8.0/flags/4x3/ru.svg'>&nbsp;ru</a>
+					<ul class="dropdown-menu dropdown-menu-end">
+						<li><a class="dropdown-item active" href="https://codepen.io/KonSoc/pen/xxrNwOq">
+								<img class="lng_flag"
+									src='https://cdn.jsdelivr.net/npm/flag-icon-css@2.8.0/flags/4x3/ru.svg'>&nbsp;ru</a>
+						</li>
+						<li><a class="dropdown-item" href="https://codepen.io/KonSoc/pen/jOwobrg">
+								<img class="lng_flag"
+									src='https://cdn.jsdelivr.net/npm/flag-icon-css@2.8.0/flags/4x3/gb.svg'>&nbsp;en</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<button class="navbar-toggler nav_mobile collapsed" type="button" data-bs-toggle="collapse"
+				data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="navbar-collapse collapse " id="main_nav">
+				<ul class="nav nav-pills navbar-nav">
+
+					<li class="nav-item">
+						<button class="nav-link active" id="nav-covid-tab" data-bs-toggle="tab"
+							data-bs-target="#pg_covid" type="button" role="tab" aria-controls="pg_covid"
+							aria-selected="true">Ковидо-карта </button>
+					</li>
+
+					<li class="nav-item">
+						<button class="nav-link" id="nav-todo-tab" data-bs-toggle="tab" data-bs-target="#pg_todo"
+							type="button" role="tab" aria-controls="pg_todo" aria-selected="true">Что делать</button>
+					</li>
+
+					<li class="nav-item">
+						<button class="nav-link" id="nav-manifest-tab" data-bs-toggle="tab"
+							data-bs-target="#pg_manifest" type="button" role="tab" aria-controls="pg_manifest"
+							aria-selected="true">Манифест</button>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+							aria-expanded="false">Кампании</a>
+						<ul class="dropdown-menu">
+							<li>
+								<button class="dropdown-item nav-link " id="nav-free_delegaty-tab" data-bs-toggle="tab"
+									data-bs-target="#pg_free_delegaty" type="button" role="tab"
+									aria-controls="pg_free_delegaty" aria-selected="true">Свободные делегаты</button>
+							</li>
+
+							<li>
+								<button class="dropdown-item nav-link " id="nav-lovi_kandidata-tab" data-bs-toggle="tab"
+									data-bs-target="#pg_lovi_kandidata" type="button" role="tab"
+									aria-controls="pg_lovi_kandidata" aria-selected="true">ЛОВИТЕ КАНДИДАТА!!!</button>
+							</li>
+							<li>
+								<button class="dropdown-item nav-link " id="nav-sudii_agenty-tab" data-bs-toggle="tab"
+									data-bs-target="#pg_sudii_agenty" type="button" role="tab"
+									aria-controls="pg_sudii_agenty" aria-selected="true">Судьи-"чекистские
+									агенты"</button>
+							</li>
+							<li>
+								<button class="dropdown-item nav-link " id="nav-kollaboranty-tab" data-bs-toggle="tab"
+									data-bs-target="#pg_kollaboranty" type="button" role="tab"
+									aria-controls="pg_kollaboranty" aria-selected="true">Бизнес-коллаборанты</button>
+							</li>
+							<li>
+								<button class="dropdown-item nav-link " id="nav-prisyaga-tab" data-bs-toggle="tab"
+									data-bs-target="#pg_prisyaga" type="button" role="tab" aria-controls="pg_prisyaga"
+									aria-selected="true">Присяга народу</button>
+							</li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li class="nav-item">
+								<button class="dropdown-item nav-link " id="nav-money-tab" data-bs-toggle="tab"
+									data-bs-target="#pg_money" type="button" role="tab" aria-controls="pg_money"
+									aria-selected="true">Про деньги</button>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<button class="nav-link" id="nav-info-tab" data-bs-toggle="tab" data-bs-target="#pg_info"
+							type="button" role="tab" aria-controls="pg_info" aria-selected="true">Инфо</button>
+					</li>
+				</ul>
+			</div>
+
+			<div class="nav_desktop">
+				<div class="lng_wrap d-flex">
+					<div class="dropdown">
+						<a class="btn btn_lng dropdown-toggle" href="#" role="button" id="btn_current_locale"
+							data-locale="ru" data-bs-toggle="dropdown" aria-expanded="false">
+							<img class="lng_flag"
+								src='https://cdn.jsdelivr.net/npm/flag-icon-css@2.8.0/flags/4x3/ru.svg'>&nbsp;ru</a>
+						<ul class="dropdown-menu dropdown-menu-end">
+							<li><a class="dropdown-item active" href="https://codepen.io/KonSoc/pen/xxrNwOq"><img class="lng_flag"
+										src='https://cdn.jsdelivr.net/npm/flag-icon-css@2.8.0/flags/4x3/ru.svg'>&nbsp;ru</a>
+							</li>
+							<li><a class="dropdown-item" href="https://codepen.io/KonSoc/pen/jOwobrg"><img class="lng_flag"
+										src='https://cdn.jsdelivr.net/npm/flag-icon-css@2.8.0/flags/4x3/gb.svg'>&nbsp;en</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+		</div> <!-- container-fluid.// -->
+	</nav>
+
+	<!-- ============= COMPONENT END// ============== -->
+</header>
+
+<div class="tab-content w-100 mt-4 mb-2 " id="curtain_body">
+
+	<div class="tab-pane show active page_wrapper" id="pg_covid" role="tabpanel" aria-labelledby="nav-covid-tab">
+		<h1>Очень общий сравнительный анализ заболеваемости, смертности и вакцинации от COVID-19</h1>
+		<div class="d-flex justify-content-center flex-wrap">
+			<div class="chart_container covid_container">
+
+				<div id="chart_covid" class="chart_div"></div>
+
+				<div id="chart_vaccination_percent" class="chart_div"></div>
+				<div>
+					<label class="form-check-label"><input class="form-check-input" type="radio" name="chart_accuracy"
+							value="4_round"> среднее за 4д. </label>
+					<label class="form-check-label"><input class="form-check-input" type="radio" name="chart_accuracy"
+							value="7_round"> среднее за 7д. </label>
+					<label class="form-check-label"><input class="form-check-input" type="radio" name="chart_accuracy"
+							value="7_round_frame" checked> среднее за 7д. "падающим окном"</label>
+					<label class="form-check-label"><input class="form-check-input" type="radio" name="chart_accuracy"
+							value="as_is"> как есть </label>
+					<div class="chart_size_wrap">
+						<label for="slct_chart_size">Размер графика: </label>
+						<select class="form-select form-select-sm" aria-label=".form-select-sm example"
+							id="slct_chart_size">
+							<option data-height="250" data-width="350">250x350</option>
+							<option data-height="350" data-width="550">350x550</option>
+							<option data-height="450" data-width="850" selected>450x850</option>
+							<option data-height="700" data-width="1200">700x1200</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="map_container covid_container">
+				<div id="svgMapDeaths"></div>
+				<div class="row slide_date_cap">
+					<p class="p_date_cap p_left"><span id="spnDateBegin"></span> </p>
+					<p class="p_date_cap p_center"><span id="spnDateCurrent"></span></p>
+					<p class="p_date_cap p_right"> <span id="spnDateEnd"></span></p>
+				</div>
+				<label for="dateRange"></label><input type="range" class="form-range" min="1" max="100" value="100"
+					id="dateRange">
+
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="input-group">
+							<label><input type="checkbox" class="form-check-input chk_map"
+									id="chk_map_relative">относительно
+								населения</label>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="input-group">
+							<label for="slct_map_time">Время: </label>
+							<select class="ms-2 form-select form-select-sm" aria-label=".form-select-sm example"
+								id="slct_map_time">
+								<option data-time="7days" selected>за 7 дней</option>
+								<option data-time="all_time">за все время</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="row-not">
+					<label><input type="checkbox" class="form-check-input chk_map" id="chk_map_europe">Европа</label>
+					<label><input type="checkbox" class="form-check-input chk_map" id="chk_map_asia">Азия</label>
+				</div>
+				<div class="map_control_data_container">
+					<label class="form-check-label"><input class="form-check-input" type="radio" name="map_radio_data"
+							value="death" checked> Смертность </label>
+					<label class="form-check-label"><input class="form-check-input" type="radio" name="map_radio_data"
+							value="new_case"> Заболеваемость </label>
+					<label class="form-check-label"><input class="form-check-input" type="radio" name="map_radio_data"
+							value="vaccination"> Вакцинация </label>
+					<label class="form-check-label"><input class="form-check-input" type="radio" name="map_radio_data"
+							value="death_rate"> Коэффициент смертности </label>
+				</div>
+			</div>
+			<div class="country_info_wrapper covid_container">
+				<div class="country_info_container covid_container" id="country_info_container">
+					<h6>Статистика по стране </h6>
+					<div class="cntr_info_line row">
+						<div class="cntr_info_param col"> kjlkjlklkj:
+						</div>
+						<div class="cntr_info_val col"> 78798798
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="block_container mt-4 ">
+		<iframe src="https://player.vimeo.com/video/597715826?h=cf941a967e" width="640" height="360" 
+		frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>		
+	</div>
+
+		<div class="block_container">
+			<div class="page_block">
+				<div class="donate_wrapper">
+					<h4>Помочь Проекту:</h4>
+					<h5>Почта для сотрудничества</h5>
+					<p>
+						konsoc_pr@protonmail.com
+					</p>
+					<h5>Patreon</h5>
+					<p>
+						<a href="https://patreon.com/konsoc"><img class="donate_logo"
+								src="https://cdn.cdnlogo.com/logos/p/39/patreon.svg">https://patreon.com/konsoc</a>
+					</p>
+					<h5> Donation Alerts</h5>
+					<p>
+						<a href="https://donationalerts.com/r/konsoc"><img class="donate_logo"
+								src="https://www.donationalerts.com/img/header/logo.svg">https://donationalerts.com/r/konsoc</a>
+					</p>
+					<h5>BitCoin</h5>
+					<p>
+						<img class="donate_logo" src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg">
+						bc1q65aklpyt8dewxl03upqscfjfapsg6m5mn4kelg
+					</p>
+				</div>
+			</div>
+
+			<div class="page_block">
+				<p>
+					По Китаю данные недостоверны ;)
+				</p>
+				<div class="p-3 mb-2 bg-danger text-white">
+					<p>
+						ВНИМАНИЕ!!!
+					</p>
+					<p class="text-start ">
+						Активное препятствование распространению этой информации является ОСОЗНАННЫМ укрывательством
+						геноцида. И будет рассматриваться как соучастие в преступлении против человечности.
+						<br />
+					</p>
+				</div>
+
+				<h3>Статистические странности эпидемии Ковида в России.</h3>
+
+
+				<p class="text-start">
+					1. Волны бывают двух видов - легкая и тяжелая. При легкой волне смертность и заболеваемость
+					низкие,
+					а
+					форма графика синусообразная, с малой скоростью увеличения и продолжительным плато на максимуме.
+					При
+					тяжелой волне смертность и заболеваемость высокие, а форма графика в виде треугольника, когда
+					сначала
+					идет линейный рост, на вершине резкий, мгновенный перелом и такое же линейное уменьшение.
+					<br />
+					<br />
+					В России с июля по октябрь идет две противоположные тенденции - медленное догорание первой волны
+					и
+					столь
+					же медленное развитие экспоненциальной эпидемии. Но начиная с октября медленный подъем
+					экспоненты
+					резко
+					ускоряется и достигает максимума в первых числах декабря. Что точно повторяет картину на
+					Украине. Но
+					если на Украине эпидемия после пика тут же идет на убыль, то в России она затормаживается на
+					плато.
+					В
+					декабре же начинается и пока еще неспешная кампания вакцинации.
+					<br />
+				</p>
+				<p class="fst-italic fw-bold text-warning bg-dark">
+					Первая странность: у графика тяжелой волны должна быть острая вершина.
+				</p>
+
+				<img class="col-10"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_01.png">
+
+				<p class="text-start">
+					2. После прохождения плато и перед началом падения случился локальный горбик заболеваемости.
+					Который совпадает с первым пиком модной процедуры. Данные по уколам на первые месяцы
+					недостоверны, и выделение этой взаимосвязи можно легко посчитать притянутым за уши.
+					<br />
+				</p>
+				<p class="fst-italic fw-bold text-warning bg-dark">
+					Вторая странность - соответствие локального пика процедуры с локальным пиком заболеваемости.
+				</p>
+
+				<img class="col-10"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_02.png">
+
+				<p class="text-start">
+					3. С конца декабря по середину января идет снижение смертности. Которое внезапно сменяется на
+					рост,
+					и за
+					неделю, к концу января, дорастает до декабрьского максимума. Хотя соответствующего по масштабу
+					изменения
+					графика заболеваемости нету. Есть только очень маленький горбик месяц назад. Разница в
+					смертности
+					между
+					январским минимумом и максимумом смертности составляет 15 процентов. Тогда как соответствующее
+					изменение
+					графика заболеваемости составляет только 3%.
+				</p>
+				<p class="fst-italic fw-bold text-warning bg-dark">
+					Третья странность - пятикратное несоответствие масштабов изменений графиков смертности и
+					заболеваемости
+					в январе двадцать первого.
+				</p>
+
+				<img class="col-10 mb-2"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_03.png">
+
+				<p class="text-start">
+					4.
+				</p>
+				<p class="fst-italic fw-bold text-warning bg-dark">
+					Четвертая странность - январский пик смертности день в день соответствует увеличению скорости
+					обработки
+					населения.
+				</p>
+
+
+				<img class="col-10 mb-2"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_04.png">
+
+
+				<p class="text-start">
+					5. С конца декабря заболеваемость снижается линейно. Сначала смертность идет вслед за
+					заболеваемостью.
+					Но вдруг в середине января случается задержка на целый месяц и график смертности начинает
+					опережать
+					заболеваемость.
+				</p>
+				<p class="fst-italic fw-bold text-warning bg-dark">
+					Пятая странность - месячная задержка в соответствии графиков смертности и заболеваемости.
+				</p>
+
+
+				<img class="col-10 mb-2"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_05.png">
+
+				<p class="text-start">
+					6. С середины марта по середину июня заболеваемость идет горизонтально. Тогда как на графике
+					смертности
+					на этом участке ясно видны три горба. Которые соответствуют таким же изменениям зеленого
+					графика.
+				</p>
+				<p class="fst-italic fw-bold text-warning bg-dark">
+					Шестая странность - совпадение частоты вакцинации и смертности.
+				</p>
+
+				<img class="col-10 mb-2"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_06.png">
+
+
+				<p class="text-start">
+					7. Восьмого июня внезапно пушечным ядром в небо взлетает заболеваемость. И буквально в течении
+					недели
+					вслед за заболеваемостью в стратосферу улетает и смертность. Хотя нормальная задержка в два раза
+					больше
+					- две недели. Мне отчетливо помнится, что именно в это время начинается яростная кампания
+					пропаганды
+					добровольно-насильственной вакцинации, под угрозой голодной смерти в нищете под забором. Это
+					крайне
+					подозрительно, что рукотворное протыкивание так аккуратно кореллирует с природно-естественными
+					графиками
+					смертности и заболеваемости.
+				</p>
+				<p class="fst-italic fw-bold text-warning bg-dark">
+					Седьмая странность - одновременное резкое ускорение смертности, заболеваемости и вакцинации.
+				</p>
+
+				<img class="col-10 mb-2"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_07.png">
+
+				<p class="text-start">
+					8. Двенадцатого июля зеленый график искусственного прививания вируса достигает максимума и
+					начинается
+					снижение. Примерно в это же время в СМИ появились новости из разных мест о недостатке препарата,
+					что
+					Спутника не хватает на всех желающих. И примерно тогда же начали прорывать информационную
+					блокаду
+					вопли
+					жертв и их родственников, если сами жертвы, по причине летального исхода, уже ни на что не могли
+					никому
+					пожаловаться. Чрез пару дней, шестнадцатого июля, график заболеваемости также достигает пика и
+					начинает
+					снижаться. А еще через пару дней, двадцатого июля график смертности также прекращает свой
+					стремительный
+					рост,
+					проходит через точку перелома и выходит на горизонтальное плато.
+				</p>
+				<p class="fst-italic fw-bold text-warning bg-dark">
+					Восьмая странность - совпадение точек перегиба всех трех графиков в июле двадцать первого.
+				</p>
+
+
+				<img class="col-10 mb-2"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_08.png">
+
+				<p class="text-start">
+					9. С семнадцатого июля и по двадцать седьмое августа (на момент скриншотов), график смертности
+					идет
+					равномерно и горизонтально. Тогда как заболеваемость все это время убывает. Это статистическая
+					аномалия.
+					Смертность, во-первых, должна отставать на две недели от заболеваемости. А во-вторых,
+					горизонтальному
+					графику смертности должен соответствовать такой же по продолжительности горизонтальный участок
+					заболеваемости.
+				</p>
+				<p class="fst-italic fw-bold text-warning bg-dark">
+					Девятая странность - стабильная горизонтальность графика смертности в течении сорока дней
+				</p>
+
+
+
+				<img class="col-10 mb-2"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_09.png">
+
+
+				<p class="text-start">
+
+					<span class="tw-bold">10. Коэффициент смертности в двадцатом году составлял 2 процента. А в
+						двадцать первом уже 4 процента.</span> <span class="text-danger tw-bold">Повышение в два
+						раза! </span> Это практически невозможно, чтоб вдруг так резко изменилась взаимосвязь
+					между заболеваемостью и смертностью. Заболеваемость, допустим, может колебаться в самых широких
+					пределах, от нуля до максимального максимума и обратно до нуля. Но вслед за заболеваемостью, с
+					двухнедельной нормальной задержка, должна следовать смертность, четко как линейная функция:
+					death_cases = 0.02 * new cases.<br />
+					Эту цифру <span class="tw-bold">увеличения коэффициента смертности в два раза</span> я считаю
+					самым надежным доказательством моей гипотезы о смертельной опасности
+					Спутника, которая с течением времени и не собирается снижаться. Если в развитых странах всплеск
+					смертности от прививки приходится только на первую пару-тройку месяцев, то россиянский Спутник
+					собирает
+					свою кровавую жатву вот уже более полугода со стабильной надежностью и эффективностью.
+				</p>
+				<p class="fst-italic fw-bold text-warning bg-dark">
+					Десятая странность - коэффициент смертности во время прививочной кампании увеличивается в два
+					раза,
+					в сравнении с предыдущим периодом естественного течения эпидемии.
+				</p>
+				<img class="col-10 mb-2"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_10.png">
+
+				<p class="text-start">
+					11. Удивительно стабильный и высокий уровень эпидемии во все время вакцинирования. В россиянии,
+					как
+					известно, применяется только отечественные, импортозамещенные препараты. В основном Спутник, и
+					еще
+					немного других таких же отечественных. А в Европе используются совсем другие вакцины, западного
+					производства и разработки. <br />
+					Если в других странах, невзирая на все отклонения, график смертности сохраняет тренд на снижение
+					с
+					декабрьского пика второй волны и за полгода, к началу августа опускается до уровня около нуля,
+					то на
+					богоспасенной родине смертность за первый месяц, за февраль опустилась на треть от максимума и
+					дальше
+					всю дорогу демонстрирует несгибаемую путинскую стабильность. <br />
+
+				</p>
+				<p class="fst-italic fw-bold text-warning bg-dark">
+					Одиннадцатая странность - стабильно высокий и раномерный характер эпидемии во все время кампании
+					тыканья.
+				</p>
+
+				<img class="col-10"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_11.png">
+				<br />
+				<img class="col-10 mb-2"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_12.png">
+
+				<p class="text-start">
+					12. Этот пункт не имеет отношения к России, разве что постольку, поскольку Россия граничит с
+					Монголией. И приводится для доказательства, что вакцинация в принципе может быть единственной
+					причиной эпидемии.
+					<br />
+					В странах Азии не было серьезной заболеваемости, пока там не началось искусственное заражение
+					вирусом. Например, в странах полуострова Индокитай или в Монголии. Азиаты вообще имеют высокий
+					иммунитет к своим местным болячкам в целом и к вирусу Ковида в частности. Особенно показателен
+					здесь
+					Таиланд. Эта туристическая Мекка всего мира, которую за год посещают 30 миллионов туристов.
+					Что всего в
+					два раза меньше, чем количество самих тайцев. Т.е. нельзя сказать, что в Таиланде эпидемии не
+					было,
+					будто бы это закрытая от всего мира страна и туда никакой носитель вируса в принципе не мог
+					физически
+					проникнуть.
+					Вовсе нет. И первая, и вторая мировая волна в Таиланде зафиксирована. В первую волну, в
+					марте-апреле 2020 г.,
+					количество заболеваний было около сотни в день и две-три смерти. А во-вторую волну, в январе
+					двадцать первого года, количество новых случаев фиксировалось от двухсот до четырехсот, в первой
+					неделе февраля дойдя даже до девятисот. Но при этом количество смертей в день было около нуля,
+					0.1 -
+					0.9 среднего в день. Или, грубо, коэффициент смертности в первую составлял 2%, а во-вторую -
+					0,2%,
+					в десять раз меньше. Т.е. очень похоже на картину в странах западной Европы, где коэффициент
+					смертности в первую волну был до 20%, а во вторую около 2%, также в 10 раз меньше.<br />
+					Но как только началась вакцинация, то тут же стократно выросли все графики. И график смертности,
+					и график заболеваемости...
+				</p>
+				<p class="fst-italic fw-bold text-warning bg-dark">
+					Двенадцатая странность - в отдельных азиатских странах вовсе не было эпидемии, пока
+					там не началась вакцинация.
+				</p>
+
+				<img class="col-10 mb-2"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/proof_ru_13.png">
+
+
+			</div>
+
+			<div class="block_container mt-4 ">
+				<iframe src="https://player.vimeo.com/video/621085093" width="640" height="360" frameborder="0" 
+				allow="autoplay; fullscreen" allowfullscreen></iframe>
+			</div>
+
+						
+			<div class="page_block">
+				<h3>"Цена Победы" над эпидемией</h3>
+
+
+				<p class="text-start">
+					Опираясь на весь представленный в соответствующих видео материал, можно сделать такой же
+					графический
+					вывод про то, что это все значит. Можно отделить воздействие искусственного фактора от
+					естественного.
+				</p>
+
+				<p class="text-start">
+
+					Из примеров быстрой европейской первой волны и украинской затяжной второй волны понятна
+					ожидаемая
+					форма
+					графика, которую должна иметь естественная волна. Во-первых, левый участок нарастания по форме
+					соответствует
+					правому участку убывания. Во-вторых, вторая волна, в отличии от первой, имеет отлогие подошвы с
+					обеих
+					сторон, т.е. длинные участки медленного разгорания и затухания.
+				</p>
+
+				<p class="text-start">
+
+					Я на одинаковой высоте взял соответствующие точки на участках роста и убывания, записал их
+					координаты,
+					которые показывает редактор, и у меня получилось, что расстояние по горизонтали справа и слева
+					между
+					точками
+					сверху и снизу одинаковое с точностью до пикселя, т.е. углы наклона в верхней части графика
+					одинаковы. А
+					значит, и участки подошвы должны быть одинаковы.<br />
+					Я ничего не подгадывал, одинаковые расстояния действительно получились с первого раза. Я сам
+					удивился.
+				</p>
+
+				<img class="col-10"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/expect_02.png">
+
+				<p class="text-start">
+
+					Для наглядности, обрисовываю черным ожидаемый график смертности, каким он должен быть при
+					естественном
+					развитии событий. И тогда получается, что вся площадь, оказавшаяся выше черной линии, имеет
+					искусственное
+					происхождение.
+				</p>
+				<img class="col-10"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/expect_03.png">
+				<p class="text-start">
+					Для наглядности, обвожу этот участок красным.<br />
+					Теперь вопрос на глазомер. Скажите, во сколько раз площадь закрашенной черным поверхности
+					отличается
+					от
+					красной? Они равны? Или черная больше в полтора раза?<br />
+				</p>
+				<img class="col-10"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/expect_04.png">
+				<br />
+				<br />
+				<br />
+				<br />
+				<p class="text-start">
+					Нет. Они даже примерно не равны. Потому что на момент скриншотов, на 28 авг. 2021 г., количество
+					обработанного населения составляет 30 %. А по плану надо довести цифру до шестидесяти, чтобы
+					сравняться
+					с европейским уровнем в 60%. <br />
+					Площадь красной зоны надо увеличить в 2 раза.
+				</p>
+				<br />
+				<br />
+				<br /><br />
+				<br />
+				<br /><br />
+				<br />
+				<br /><br />
+				<br />
+				<br /><br />
+				<br />
+				<img class="col-10"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/expect_05.png">
+
+				<p class="text-start">
+
+
+					И если даже предположить, что сейчас действительно идет третья волна, которая имеет естественное
+					происхождение, а не является следствием полицейского усиления борьбы с ковидлой, то и в этом
+					случае
+					количество искусственно-принудительных смертей не снижается ниже 10% от естественных. А 10% я
+					считаю
+					максимально допустимой ценой, которую можно заплатить ради предупреждения и профилактики. Когда
+					же
+					вред
+					от
+					профилактических мер равен вреду от самой напасти, или тем более когда вред больше в 3 раза, то
+					это
+					не
+					профилактика. Это геноцид. Простите за громкое слово.
+				</p>
+				<img class="col-10"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/konsoc-demo@main/files/images/01-init/expect_06.png">
+
+
+				<p class="text-start">
+					Да, геноцид. И не важно, в действительности, является ли геноцид результатом злонамеренной воли,
+					или
+					произошел из-за чудовищной некомпетентности руководящих лиц. Не важно. В счет идет только
+					конкретной
+					количество смертей. Халатность, напоминаю, тоже прописана в уголовном кодексе:
+				</p>
+
+				<p class="text-start ">
+					<span class="fw-bold">УК РФ Статья 293. Халатность</span><br />
+					<span class="fst-italic">
+						3. Деяние, предусмотренное частью первой настоящей статьи, повлекшее по неосторожности
+						смерть
+						двух
+						или
+						более лиц,<br />
+						наказывается принудительными работами на срок до пяти лет с лишением права занимать
+						определенные
+						должности или заниматься определенной деятельностью на срок до трех лет или без такового
+						либо
+						лишением
+						свободы на срок до семи лет с лишением права занимать определенные должности или заниматься
+						определенной
+						деятельностью на срок до трех лет или без такового.</span>
+				</p>
+
+				<p class="text-start">
+					Только вряд ли те, кто придумывал эту статью, под словами "смерть двух или более лиц" имели в
+					ввиду
+					что-то большее, чем количество пассажиров в автобусе, где пьяный механик не докрутил гайку в
+					тормозах.
+					Если халатность стала причиной десятков тысяч смертей, то она должна обзываться более жестким
+					термином,
+					чем просто халатное отношение к своим должностным обязанностям.
+				</p>
+
+				<p class="text-start">
+					Итого:<br />
+					Для каждой аномалии графиков можно придумать несколько более-менее логичных объяснений.
+					Что на начало вакцинации данные недостоверные. Что третья волна на самом деле существует.
+					Что "административные меры" действительно серьезно влияют на распрстранение болезни... Но все наборы
+					объясений объединяет одно: в каждом присутствует объяснение, что Спутник - это смертельно опасная
+					вещь. А значит, общее для всех объяснение и является верным. Логика.
+				</p>
+
+			</div>
+
+			<div class="page_block">
+				<h3>Что же делать?</h3>
+				<p class="text-start">
+					А делать нужно революцию. Революцию Сознания. Нужно вернуться обратно к правде и
+					вытрясти из голов всю ту безумную шизофрению, что туда за последнее столетие напихали
+					всякие подлецы и негодяи. Нужно <s>рассказать</s> показать людям, что
+					предприниматели - это добро. А каратели, насильники, силовичье - это зло. Что
+					предприниматели суть производители и податели благ, а захватившая власть в государстве и
+					превратившая
+					самое государство в орудие преступления преступная кодла узурпаторов не производят ничего
+					другого, кроме жестокости и насилия.<br />
+					Я перед выборами бегал по чатам с идеей срыва выборов. Но, к сожалению, передо мной
+					развернулась довольно печальная картина... Основные движущие мотивации:<br />
+					1. Вековвечный страх перед поркой на конюшне,<br />
+					2. Совковый страх перед доносчиками и порвокаторами. Что каждый сосед это предатель,
+					что кругом враги, что первыми донос на папаньку с маманькой накатают их же собственные дети.<br />
+					3. Полное непонимание своих прав и потому животный страх перед "законом",
+					когда гос.каратели законом подтираются самым бесстыдным и циничным образом.<br />
+					4. Совершенно скотский ужас отвечать за свои слова.<br />
+					5. Неспособность к логическим рассуждениям...
+				</p>
+
+				<p class="text-start">
+					В общем, за 2 недели я добился одной-единственной ответной активной реакции - доноса. Какой-то
+					чувак под ником <b>Edinoross</b> написал мне в телегу следующее сообщение: <br />
+					"Твою замечательную идею заметили. Силовики в курсе".<br />
+					На что я ответил: "Спасибо за предупреждение. Значит, за оставшиеся сутки я
+					должен успеть сделать все"<br />
+					Чуть погодя этот краткий диалог пропал, а чувак сменил ник на <b>твой страшный сон</b>.
+					А еще чуть погодя это трусливое убожество совсем затерло свой ник до одной точки.
+				</p>
+
+				<p class="text-start">
+					Грубо, людей можно поделить на 5 соцтипов: аристократы, подданные, рабы, рабовладельцы и маргиналы.
+				</p>
+
+				<ul class="text-start">
+					<li>Аристократ - для кого честь дороже жизни.
+					</li>
+					<li>Подданный - кто вручил свою жизнь и судьбу своему аристократу.
+					</li>
+					<li>Раб - кто под страхом распрвы готов на любую мерзость. Нет, вы не поняли. Не просто на любую,
+						а СОВСЕМ НА ЛЮБУЮ МЕРЗОСТЬ. Что и продемонстрировало ковидобесие, когда было запрещено продавать
+						еду
+						безмасочникам. А что отказ в еде означает соучастие в голодоморе, в геноциде, так рабам на это
+						пофигу.
+						Рабы боятся даже не физической расправы, а всего лишь штрафа. Рабы боятся за свою шкуру.
+						Рабу плевать на другого раба.
+					</li>
+					<li>Рабовладелец - просто бывший раб, только хитрый и подлый.
+					</li>
+					<li>Маргинал - сам по себе мальчик, изгой общества, кто сам для себя судья, палач и жертва
+						собственного закона.
+					</li>
+				</ul>
+
+				<p class="text-start ">
+					Выбирай, с кем ты ;)
+				</p>
+
+				<p class="text-start ">
+					Вооруженная борьба бессмысленна. Плавали, знаем.<br />
+					Но это не революция бунта, это Революция Сознания. Поэтому борьба должна идти на уровне смысла, на
+					уровне Морали, на уровне авторитета. У бандитов нету ни смысла, ни морали, ни авторитета. Чтобы их
+					победить,
+					надо всего лишь показать, кто они такие. Надо всего лишь задать "представителям интересв
+					избирателей" несколько очень конкретных вопросов, на которые возможны лишь два ответа - "Да, я
+					конченная
+					мразь, террорист, вор и пособник узурпатора" и "Нет, я против террора, я против узаконенного
+					бандитизма".
+				</p>
+				<p class="text-start ">
+					Моя светлая мечта, чтоб на политических процессах ко всем этой кодле судей-холуек обращалиьс не
+					бессмсленным обрубком
+					"Ваша честь", а полной формулой "ваша честь судьи, приговорившего Навального к бесконечному
+					тюремному заключению
+					за то, что его в состоянии кому г. обнуленыш лично разрешил отправить в Германию на
+					лечение"...<br />
+					Но этого не будет((( Потому что подсудимых за попытку продемонстрировать свое достоинство тем же
+					вечером будут
+					в камере бить. Долго. Пока не сломается в раба. Надо на ломке держать неделю, будут пытать неделю.
+					Надо на ломке держать месяц, будут измываться месяц. Надо год - будут калечить и убивать весь год,
+					как Мохнаткина, которому в пыточных застенках сломали позвоночник:<br />
+					<i>На суде Мохнаткин требовал полного своего оправдания, надеялся доказать свою невиновность. Однако
+						судья Тверского суда Александра Ковалевская удалила из зала заседаний 9 свидетелей защиты,
+						заявив, что они лица заинтересованные и их показания не имеют силы[8]. Свидетели обвинения, все
+						сотрудники милиции, на суд не явились[8]. Государственный адвокат обвиняемого и «потерпевший» не
+						явились на заседание также[8]. 8 июня прокурор Л. А. Сергуняева запросила для Мохнаткина 5 лет
+						лишения свободы.</i><br />
+					<i>20 марта 2017 года суд города Котласа, в колонии которого отбывал наказание Мохнаткин, приговорил
+						его ещё к двум годам лишения свободы по обвинению в дезорганизации работы колонии: по версии
+						следствия, заключённый якобы оказал сопротивление охранникам и ударил одного из них. По версии
+						Мохнаткина, избит был он сам, из-за чего получил перелом позвоночника[48]. В следующей колонии
+						врач подтвердил, что у Мохнаткина перелом позвоночника. Правда, в документах указал, что он был
+						получен давно. Поэтому никого не наказали — ни за травму, ни за прикрытый
+						видеорегистратор.[49]</i><br />
+					<br />
+					А адвокаты - это такие же затравленные рабы, как и все прочие подвиды карательной нечисти.
+					Без чести, без совести, без морали, без смелости. Просто продажные профессионалы.
+					Покорные рабы в рамках загона. Я смотрел трансляции судебных заседаний. Я знаю.
+				</p>
+				<p class="fw-bold">
+					Конкретика реализации описана на вкладке меню "Что делать".
+					<br />
+				</p>
+				<p class="text-start">
+					PS: Вы все нужны. И монархисты, и минархисты, и националисты,
+					и либералы, и либертарианцы, и атеисты, и верующие, и трусы, и боевики, и даже прастихоспади
+					коммунисты. Вы нужны
+					все, за исключением гебушни.
+				</p>
+				<p class="text-start">
+
+					<i>«Нет общины, организации, которая была бы как Остров, сама по себе, каждое объединение людей
+						есть часть
+						России, часть эгрегора; и если волной снесёт в море береговой Утёс, меньше станет Материк, и
+						так же,
+						если смоет край мыса или разрушит Замок твой или друга твоего; уничтожение каждого класса
+						общества
+						умаляет и меня, ибо я един со всей Россией, а потому не спрашивай, по ком звонит колокол: он
+						звонит по Тебе».</i>
+				</p>
+				<p class="text-start">
+					Слава России!
+				</p>
+			</div>
+
+			
+			
+			<div class="page_block">
+				<h3>Источники данных</h3>
+				<h5>Смертность</h5>
+				<p>
+					<a
+						href="https://github.com/CSSEGISandData/COVID-19/raw/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv">https://github.com/<wbr/>CSSEGISandData/COVID-19/raw/master/<wbr/>csse_covid_19_data/<wbr/>csse_covid_19_time_series/<wbr/>time_series_covid19_deaths_global.csv</a>
+				</p>
+				<h5> Новые случаи</h5>
+				<p>
+					<a
+						href="https://github.com/owid/covid-19-data/raw/master/public/data/jhu/new_cases.csv">https://github.com/owid/<wbr/>covid-19-data/raw/master/<wbr/>public/data/<wbr/>jhu/new_cases.csv</a>
+				</p>
+				<h5>Вакцинация</h5>
+				<p>
+					<a
+						href="https://github.com/owid/covid-19-data/raw/master/public/data/vaccinations/vaccinations.csv">https://github.com/owid/covid-19-data/<wbr/>raw/master/public/data/<wbr/>vaccinations/vaccinations.csv</a>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="tab-pane page_wrapper" id="pg_todo" role="tabpanel" aria-labelledby="nav-todo-tab">
+		<div class="block_container">
+			<h3>Что делать-та???</h3>
+			<div class="page_block">
+				<p class="text-start ">
+
+					Я не обращаюсь к толпе. Я никого не собираюсь ghtkmofnm жирной пайкой, как некоторые,
+					или соблазнять разгулом кровавого ресентимента, как радикальные некоторые.
+					Я побегал по чатам, пообщался, поуговаривал. Я на живом факте edbltk, что такое толпа, и чего стоит
+					вся их нелюбовь к бункерному сидельцу. Как говорится, "пусть не любят, лишь бы боялись.<br />
+					Я обращаюсь к тем недобиткам, для кого слово "честь" все еще что-то значит. К тем, у кого
+					есть право на свободу слова. К тем, кому стыдно прятаться за спинами женщин и детей, "выводя людей
+					на улицу".<br />
+					Аристократы всегда одиноки, сколькими бы нулями они не были окружены. Такова природа человека.
+				</p>
+				<p class="text-start ">
+					У меня не получилось сорвать выборы и пройти по мягкому варианту. Что ж, значит все будет по
+					хардкору)
+					А именно, ВСЕ организаторы сентябрьских выборов, начиная с председателей участковых комиссий и
+					поголовно
+					далее вверх по "вертикали", являются соучастниками тяжкого преступления -
+					захват и удержание власти насильственным путем. Сам факт наличия не то что сегодняшних россиянских
+					400 политических заключенных, а даже одного политического заключенного, является достаточным
+					доказательством
+					насильственных действий в процессе совершения преступления. Длящегося преступления.
+				</p>
+				<p class="text-start p-3 mb-2 bg-dark text-white">
+					<b>УК РФ Статья 278.</b> Насильственный захват власти или насильственное удержание власти <br>
+					<i>Действия, направленные на насильственный захват власти или насильственное удержание власти в
+						нарушение Конституции Российской Федерации, а равно направленные на насильственное изменение
+						конституционного строя Российской Федерации, -
+						наказываются лишением свободы на срок от двенадцати до двадцати лет с ограничением свободы на
+						срок до двух лет.
+					</i>
+				</p>
+				<p class="text-start ">
+					Смысл кампании в том, чтобы показать кодлу узурпаторов тем, чем они на самом деле я вляются -
+					организованной преступной группировкой гигантских размеров. Показать так, чтобы это стало понятно
+					даже самому зазомбированному запутинцу.
+
+				</p>
+				<p class="text-start ">
+
+					Политически неугомонные граждане! Необходимо провести допрос всех
+					"согласованных кандидатов" и "избранных депутатов" на прошедших выборах. Необходимо задать им всем
+					несколько ясных вопросов и заставить
+					"кандидатов" дать на эти вопросы однозначные и точные ответы - либо ДА/НЕТ в случае закрытого
+					вопроса,либо дать понятные, внятные ответы в случае открытого вопроса. <br />
+					Также нужно допросить всех председателей участковых комиссий. И выложить записи на
+					всеобщее обозрение в интернетах.
+					<br />
+					<br />
+					// О, это будет увлекательнейшее треш-шоу)) Я отсюда вижу совершенно фантасмагорические
+					видяшки, как
+					народные "депутаты" с заячьей прытью станут скакать по кустам, сбегая от народа. Как они станут
+					трусливо
+					выглядывать в щелочку двери и перебежками, украдкой подбираться к машине, чтобы там, за
+					тонированными
+					стеклами, наконец почувствовать себя в безопасности от своих же избирателей. Как
+					интервьюеров-волонтеров
+					будут с матом толкать охранники, не подпуская собственно народ к общению с "представителем его
+					интересов"....<br />
+					Уверяю, это будет прекрасно!
+				</p>
+
+			</div>
+			<div class="page_block">
+
+				<h3>Про "рамки закона"</h3>
+
+				<p class="text-start p-3 mb-2 bg-dark text-white">
+					<b>УК РФ Статья 32.</b> Понятие соучастия в преступлении<br>
+					<i>Соучастием в преступлении признается умышленное совместное участие двух или более
+						лиц в совершении умышленного преступления.</i><br>
+					<br>
+					<b>УК РФ Статья 278.</b> Насильственный захват власти или насильственное удержание власти<br>
+					<i>Действия, направленные на насильственный захват власти или насильственное удержание власти
+						в нарушение Конституции Российской Федерации, а равно направленные на насильственное
+						изменение конституционного строя Российской Федерации, -<br>
+						наказываются лишением свободы на срок от ДВЕНАДЦАТИ до ДВАДЦАТИ лет с ограничением свободы
+						на срок до двух лет.</i><br>
+					<br>
+					<b>УК РФ Статья 316.</b> Укрывательство преступлений<br>
+					<i>Заранее не обещанное укрывательство особо тяжких преступлений -
+						<br>
+						наказывается штрафом в размере до двухсот тысяч рублей или в размере заработной
+						платы или иного дохода осужденного за период до восемнадцати месяцев, либо
+						принудительными работами на срок до двух лет, либо арестом на срок до шести
+						месяцев, либо лишением свободы на срок до двух лет.</i><br>
+					<br>
+				</p>
+				<p class="text-start ">
+					Явно проговариваю специально для трусливых, затравленных "законопослушников в рамках загона",
+					которым про закон известен
+					лишь животный страх перед беспределом карателей:
+				<ul>
+					<li class="text-start">
+						Цитирование кому-либо содержания статей Уголовного Кодеса НЕ является угрозами убийством или
+						причинением тяжкого вреда здоровью.
+					</li>
+					<li class="text-start">
+						Задавание вопросов членам комиссий НЕ является "воспрепятствованием свободному осуществлению
+						гражданином своих избирательных прав
+						или воспрепятствованием работе избирательных комиссий".
+					</li>
+					<li class="text-start">
+						Видеосъемка в общественных местах РАЗРЕШЕНА. Нельзя лишь публиковать в открытом доступе
+						видео без разрешения граждан,
+						являющихся основным объектом съемки. А предоставлять в суд подобные видеоматериалы
+						вещественных
+						доказательств тягчайшего государственного преступления можно, должно и
+						нужно беспрепятственно)
+						<br>
+						<i>Если посредством видеосъёмки запечатлелось должностное преступление данного сотрудника (
+							например, получение или дача взятки) или ещё каким — либо способом нарушал закон, его
+							противодействия оператору в будущем будут расценены как препятствующие следствию.</i>
+						<br />
+						<a
+							href="https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%B7%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D1%91%D0%BD%D0%BD%D1%8B%D0%B9">
+							210fz.ru - Закон о видеосъемке в общественных местах
+						</a>
+
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="page_block text-start">
+				<p>
+					Для того, чтобы вытащить за ушко на солнышко всех этих "недокандидатов/полудепутатов госдумы",
+					которые за 30 лет так хорошо по западным шаблонам научились прятаться за рекламными листовками,
+					проплаченными статейками, безответственными обещаниями... Чтобы наглядно продемонстрировать, чьи
+					интересы они на самом деле представляют, за чем они так настойчиво рвутся госдуму, чем они там
+					на самом деле будут заниматься, нужно их всех заставить отвечать на закрытые вопросы. Т.е.
+					на такие вопросы, где допустимы лишь короткие, точные, не допускающие двойных толкований ответы.
+					<br>
+					<span class="fw-bold">Лондон - это столица Великобритании?</span><br>
+					<i>Да. Нет. Не знаю.</i><br>
+					<span class="fw-bold">Прага - это столица Швеции?</span><br>
+					<i>Да. Нет. Не знаю.</i>
+				</p>
+
+				<h4>Шаблон допроса</h4>
+				<p>
+					1.1. Интересы какой группы населения нашей области Вы собираетесь представлять в госдуме?<br>
+					1.2. Т.е. Вы собираетесь представлять и мои интересы?<br>
+					1.3. Покажите проекты законов, с которыми Вы идете в госдуму и которые, по-Вашему мнению,
+					соответствуют моим интересам.
+				</p>
+				<p>
+					2.1. Согласны ли Вы с тем, что выборы нужны для смены власти?<br>
+					2.2. Расскажите, как метод узаконенного недопуска нежелательных кандидатов к выборам может
+					использоваться для узурпации власти.<br>
+					2.3. Известно ли Вам, что сегодня у власти есть множество юридических закорючек и уловок, чтоб
+					не
+					допускать нежелаемых кандидатов? Например, муниципальные фильтры. Необходимость сбора подписей и
+					последующая их графологическая экспертиза. Признание акций Яндекса и Сбербанка иностранным
+					активом и на
+					этом основании снятие с регистрации, как в случае с Потапенко.<br>
+					2.4. Согласны ли Вы с этой внутренней политикой огораживания политической безопасности?<br>
+					2.5. Согласны ли Вы с тем, что действующая власть вообще может иметь какую-либо возможность не
+					допускать
+					нежелательных кандидатов?<br>
+					2.6. Согласны ли Вы с тем, что Вы являетесь "согласованным" с действующей властью
+					кандидатом/депутатом?
+				</p>
+
+				<p>
+					3. Признаете ли Вы своим Президентом гражданина, временно сейчас занимающего эту должность?
+				</p>
+				<p>
+					4.1. Зачем и почему была изначально вписана в конституцию статья 81.3?<br>
+					<i>Это открытый вопрос. Очень хочется понаблюдать, в какие казуистические выкрутасы софизмов им
+						придется пускться, чтобы не дать правильный ответ: статья 81.3 в текущей редакции означает,
+						что любой, кто сидит в
+						президентском кресле более двух сроков, является УЗУРПАТОРОМ, совершающим государственное
+						преступление! И при этом совершенно не важны какие бы то ни было отмазки и крючкотворства,
+						когда
+						есть конкретная максимальная цифра - 2 срока. И НЕ БОЛЬШЕ! </i><br>
+					4.2. Зачем, с какой целью была сделана дописка 81.3.1 в конституции?<br>
+					<i>А тут я даже близко не могу представить, что можно ответить вслух. Вариант "так проголосовал
+						народ", по очевидности, не является
+						ответом на вопрос ЗАЧЕМ... Политически подкованный
+						кандидат с необходимой для согласования с АП степенью трусости и негодяйства никогда не
+						скажет
+						верный ответ - это узурпатор кривой козой присунул отмазку своему узурпаторству. Очень
+						интересно, сможет ли хоть кто-то придумать хоть что-то! Про любые другие статьи довольно
+						несложно рассказать "зачем". </i>
+				</p>
+				<p>
+					5.1. Что случится с человеком, если его лишить еды?<br>
+					<i>Единственный верный ответ - он умрет.</i><br>
+					5.2. Является ли лишение еды по указанию госчиновника использованием политики геноцида для
+					управления?<br>
+					<i>Единственно верный ответ - да. Ответ "нет" возвращает на шаг назад, к ответу на вопрос "что
+						случится с человеком, если его лишить еды?"</i><br>
+					5.3. Будете ли Вы требовать сурового тюремного наказания для всех губернаторов, применивших
+					политику геноцида в управлении, когда выдали указ не продавать в магазинах еду всем, кто
+					отказывался
+					надеть не предназначенную для защиты от вирусов хирургическую маску, считая ее оскорбляющим
+					человеческое достоинство намордником?<br>
+					5.4. Берете ли Вы на себя ответственность отказаться от депутатской должности, если в течении
+					полугода не добьетесь никаких существенных результатов по предыдущему вопросу и тем наглядно
+					покажете свою бесполезность, некомпетентность?
+					6.5. Что Вы здесь считаете существенными результатами?
+				</p>
+				<p>
+					6.1. Какие преступления Вы готовы оправдать "государственными интересами" и прикрываясь "волею
+					пославшего мя народа"?<br>
+					<i>Очевидно, что единственный возможный ответ вслух - никакие. И тогда начинается долгое
+						перечисление задокументированных преступлений против отдельных людей в частности и
+						массовых убийств в общем:</i><br>
+					6.1.1. Вы оправдываете Чечню? Донбасс? Сирию? Отравление Скрипалей? Отравление Навального?
+					Убийство
+					Немцова? Убийство Политковской? Убийство Старовойтовой? "Рязанский сахар"? Сбитие Боинга
+					"MH-17"?
+					Расстрел в затылок всех
+					террористов во время "Норд-Оста", когда чеченцы от полной безысходности решились на такой
+					отчаянный шаг, чтоб вынудить россиянские власти к разговору на равных, а не через прицел
+					танкового орудия? <br>
+					<i> ...можете сами продолжать этот бесконечный список...</i><br>
+					6.2. Будете ли Вы требовать уголовного наказания для лиц, осуществлявших руководство
+					спецоперациями "Беслан", "Курск", "Норд-Ост", за их
+					чудовищную некомпетентность, повлекшую гибель сотен людей? Убитых во время штурма,
+					задохнувшихся в консервной банке, умерших в больницах от последствий отравления газом...
+				</p>
+				<p>
+					7. Считаете ли вы передачу острова Даманский Китаю циничным надругательством над подвигом
+					советских пограничников, защитивших остров Даманский от китайского вторжения?<br>
+				</p>
+				<p>
+					8. Считаете ли вы, что аннексия Крыма в ФЕВРАЛЕ 2014-го была законной, потому что в МАРТЕ был
+					референдум?<br>
+
+					<i> Пусть этот негодяй покажет, какая извращенная логика клубится в его черепе.
+						Насколько там спутаны причинно-следственные связи. <br>
+						А еще собирается сочинять логически-непротиворечивые законы...</i>
+				</p>
+				<p>
+					9.1. У граждан есть свобода выбора?<br>
+					9.2. Граждане могут голосовать за кого хотят?<br>
+					9.3. Хабаровчане имеют право голосовать за Фургала, если хотят?<br>
+					<i>Возражение: но ведь он в тюрьме!</i><br>
+					9.3.а. Вы, собирающийся представлять мнение сотен тысяч жителей области (края,
+					республики) кандидат, считаете, что мнение сотен тысяч граждан хабаровского края, требующих
+					простить и отпустить Фургала, является более ничтожным, чем мнение кучки из пары десятков
+					граждан, считающих себя следователями, судьями, прокурорами?<br>
+					9.4. Вы считаете нормальным, что власть может применять практику заключения под стражу для
+					исключением противников из политической борьбы?<br>
+				</p>
+				<p>
+					10.1. Спецслужбы имеют право на физическое устранение политических противников?<br>
+					<i>ДА - это чистосердечное признание россиянии террористическим государством</i><br>
+					<i>НЕТ - при этом варианте далее идет дооолгое разбирательство на тему "что случилось с
+						Навальным?"</i>
+				</p>
+				<p>
+					11. Кто сбил боинг МН-17?<br>
+					<i>Кандидат скажет какую-нибудь официальную фейковую оправдалку. И после этого должно
+						последовать доооолгое разбирательство, на основе информации из книги ВАДИМА ЛУКАШЕВИЧА
+						"Трагедия МН17 правда и
+						ложь", почему кандидат лжет</i>
+				</p>
+				<p>
+					12. Считаете ли Вы Фонд Борьбы с Коррупцией экстремистской организацией?<br>
+					<i>если ДА, то:</i><br>
+					12.1-прим. за что?<br>
+					<i>если НЕТ, то:</i><br>
+					12.1-бис. Будете ли Вы требовать наказания, как для врагов народа, для тех, кто организовывал и
+					соучаствовал в уголовном преследовании членов этой общественной организации?<br>
+					12.2-бис. Берете ли Вы на себя ответственность отказаться от депутатской должности, если в
+					течении
+					полугода не добьетесь никаких существенных результатов по предыдущему вопросу и тем наглядно
+					покажете свою бесполезность, некомпетентность?<br>
+					12.3-бис. Что Вы в этом случае посчитаете "существенными результатами"?
+				</p>
+				<p>
+
+					13.1. Лукашенко действительно выиграл выборы 20-го года?<br>
+					<i>Если НЕТ, то кандидат признает нормальной, легитимной практику фальсифкации и
+						жульничества.</i><br>
+
+					13.2. Вы считаете правильной его политику террора для утихомиривания взбунтовавшегося
+					белорусского населения?<br>
+					<i> Если НЕТ, то кандидат признает себя врагом народа. </i><br>
+					13.3. Лукашенко террорист?<br>
+					<i>Если НЕТ, то кандидат признает себя врагом народа, откровенным террористом.</i><br>
+					<i>Если ДА, то:</i><br>
+					13.4.а. Будете ли Вы жестко осуждать россиянских пособников белорусскому государственному
+					терроризму?
+					<i>Если НЕТ, то кандидат признает себя врагом народа, морально готовым к организации
+						государственного терроризма уже на территории России.</i><br>
+					13.4.б. Будете ли Вы требовать для них тюремного наказания?<br>
+					<i>При ответе ДА на предыдущий вопрос и ответе НЕТ на этот получится шизофрения:
+						"Я пособников терроризму осуждаю, но им потворствую".</i><br>
+					13.4.в. Понимаете ли Вы, что выдача эрэфией миллиардных кредитов для Белоруссии - это
+					пособничество
+					терроризму?<br>
+					<i>При ответе НЕТ кандидат признает себя виновным по статье оправдания терроризма. И дальнейшие
+						пункты "г" и "д" пропускаются.</i><br>
+					13.4.г. Понимаете ли Вы, что все, кто в этом оказался замешан, должны понести суровое наказание,
+					невзирая на должности, статусы и былые заслуги?<br>
+					13.4.д. Берете ли Вы на себя ответственность отказаться от депутатской должности, если в течении
+					полугода не добьетесь никаких существенных результатов по предыдущему вопросу и тем наглядно
+					покажете свою бесполезность, некомпетентность?
+					13.4.е. Что Вы в этом случае считаете "существенными результатами"?<br>
+				</p>
+				<p>
+					14. Нормально ли для вас, что рфия на высшем уровне ведет равноправные переговоры с
+					террористической организацией, с Талибаном, запрещенной на территории РФ?<br>
+					<i>Тут кандидаты начнут петлять по кустам, что с другими государствами в любом случае надо вести
+						переговоры, налаживать отношения, унлублять и расширять торговые связи, кто бы там сейчас не
+						находился.<br>
+						Волонтеру надо добиваться четкого ответа.<br>
+						Либо: "Да, российское правительство может вести переговоры, заключать договоры и соглашения
+						с
+						террористической организацией, с Талибаном"<br>
+						Либо: "Нет, российскому правительству ни в коем случае не допустимо считать какую-либо
+						террористическую
+						организацию равноправным дипломатическим партнером"</i>
+				</p>
+				<p>
+					15. Сколько трупов на совести обнуленыша? Назовите минимальную и максимальную цифру.<br>
+
+					<i>Это проверка на знание собственной истории) Пусть он расскажет про Чечню, Грузию, Сирию,
+						"Норд-Ост", подлодку "Курск", далее везде...</i>
+				</p>
+				<p>
+					16. Одобряете ли Вы узаконенную практику навешивания ярлыков "иностранный агент" и
+					"нежелательная
+					организация"?<br>
+					<i>Если ДА, то с моральным обликом и уровнем развтиия кандидата становится все ясно.
+						Если НЕТ, то:</i>
+					16.1. Сколько вам потребуется времени, после избрания на должность депутата, чтобы отменить эту
+					пошлятину - возведение подростковых обзывательств в ранг высшей государственной
+					политики?<br>
+					<i>Интересно, сколько кандидатов вообще представляет, по каким инструкциям организована
+						внутренняя
+						жизнь госдуры?</i><br>
+					16.1. Будете ли Вы требовать общественного позора и осуждения для всех, кто оказался активно
+					замешан в этой похабщине?
+				</p>
+				<p>
+					17.1. Согласны ли вы, что покушающиеся на конституционные основы государства
+					должны быть сурово и показательно наказаны?<br>
+					17.2. Согласны ли вы, что выборы являются конституционной основой российской федерации?<br>
+					17.2. Согласны ли вы, что честность выборов является
+					конституционной основой российской федерации?<br>
+					17.3. Согласны ли вы, что прозрачность выборов является
+					конституционной основой российской федерации?<br>
+					17.4. Согласны ли вы, что свобода выборов является
+					конституционной основой российской федерации?<br>
+					17.5. Что вы собираетесь делать, чтобы наказать фальсификаторов выборов,
+					которые совершают тяжкое государственное преступление, видеозаписи чьих
+					преступлений доступны в Интернете?<br>
+					17.6. Что вы собираетесь делать, чтобы наказать тех, кто защищаеет фальсификаторов выборов
+					от уголовного наказания, а значит, не только является пособником покушения на интститут
+					выборов как конституционной основы государства, но и, используя государственные механизмы,
+					превращает само государство в орудие преступления? т.е. совершает дважды тяжкое преступление? <br>
+				</p>
+				<p>
+					А сейчас свободная часть, для проверки общего развитие и наличия политической чуткости.<br>
+					Последовательный набор тем для рассуждений:
+				</p>
+				<p>
+					1. Попробуйте доказать утверждение, что воскресный кружок кройки и шитья является
+					террористической организацией.<br>
+					2. Попробуйте опровергнуть утверждение, что воскресный кружок кройки и шитья является
+					террористической организацией.<br>
+
+					3. Попробуйте доказать утверждение, что гитлеровское гестапо является террористической
+					организацией.<br>
+					4. Попробуйте опровергнуть утверждение, что гитлеровское гестапо является террористической
+					организацией.<br>
+
+					5. Попробуйте доказать утверждение, что ФСБ является террористической организацией.<br>
+					6. Попробуйте опровергнуть утверждение, что ФСБ является террористической организацией.
+
+				</p>
+				<p>
+
+
+					.....
+				</p>
+				<p>
+					PROFIT!
+				</p>
+				<p>
+					Список вопросов можно доооолго продолжать... Единственно, чтоб это были по возможности
+					закрытые вопросы, на который возможны лишь ответы "Да/Нет". Или максимально конкретные. Без
+					всякого вот такого подобного "что Вы думаете по поводу усиления интеграции и налаживания
+					международных связей в аспекте геополитичеких интересов межнационального сотрудничества в
+					условиях нарастания угроз мировой безопасности?"
+				</p>
+				<p class="text-start">
+					Пожалуйста, хотя бы мельком просмотрите лекции Андрея Макарова, чтобы понять, как надо вести
+					допрос. Какой конкретики и точности должны быть ответы. Что ответ "потому что гладиолус" на
+					вопрос
+					"почему солнце встает на востоке" совершенно нерелевантен. И чтоб вытрясти из головы всю ту
+					безумную дребедень, которую туда насовали пропагандоны за последние сто лет
+					совершенно разнузданной и бесстыжей агитации
+					за всякие людоедства. <br>
+					Например, вот эти два ролика: «Андрей Макаров: "Сократический диалог — метод познания себя и
+					других"»
+					и «Андрей Макаров: "Наука логической аргументации"». Мозги прочищаются удивительнейшим образом:
+				</p>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/QuwtUsYcYC0?controls=0"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/_PAc3FXMV4E?controls=0"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+			</div>
+
+
+			<div class="page_block">
+				<h2>Про важное</h2>
+				<p class="text-start ">
+					Мне нужны деньги. Много денег. Миллионов 20.<br />
+					1. Чтобы заплатить тысяче волонтеров хотя бы по десятке за возможную опасность. <br />
+					<i>//Правда, я не знаю,
+						какая может быть опасность в попытке поговорить, задать вопросы... Но и такая отличная
+						от нуля вероятность должна быть учтена. </i><br />
+					2. Чтобы нанять пару десятков менеджеров на фуллтайм для координации всей этой толпы.<br />
+					3. Чтобы заказать паре-тройке веб-студий разработку функционала сайта...<br />
+					<br />
+					// я побегал по чатам и увидел, что людей практически невозможно буквами стимулировать на
+					какие-то действия.
+					Слишком долго пропагандисты паразитировали на людском энтузиазме, слишком часто красивые слова
+					по итогу оказывались ложью.
+					А если есть опасность хоть минимального риска, то вообще вот совсем нельзя никого науськать
+					сделать хоть что-то.
+					Но за деньги же, и при наличии оправдания в виде красивой идеи, уже можно надеятся на народную
+					активность.
+					Даже если идея окажется очередным фуфлом, то у волонтеров останутся деньги, а деньги - это не фуфло)
+
+				<p class="text-start ">
+					И да, из-за необходимости соблюдать анонимность я ни копейки, ни цента, ни сатоши не смогу взять
+					на личные нужды.
+					Если к иностранным сервисам донатов у чекистов нету доступа, то в платежках россиянских банков
+					они могут копаться
+					самым беззастенчивым образом. Меня можно вычислить просто методом исключения.<br />
+					<br />
+					И нет, я никого не призываю к тому, на что не способен сам. Я не боюсь устраивать истерики в
+					общественных местах.
+					А отсидеть сутки для меня стало бы настоящим приключением, разнообразием в моей унылой жизни
+					подпольного одиночки.<br />
+					Просто на мое место больше никого нету для замены.
+					Когда закрыли Навального, то его команда тут же растерялась((<br />
+					Мою философию поймут разве что Переслегин со Школьниковым. Но, во-первых, поймут с большим
+					скрежетом, а во-вторых, они оба комплиментарны ко власти.
+				</p>
+				<h4>Помочь Проекту:</h4>
+				<h5>Почта для сотрудничества</h5>
+				<p>
+					konsoc_pr@protonmail.com
+				</p>
+				<h5>Patreon</h5>
+				<p>
+					<a href="https://patreon.com/konsoc"><img class="donate_logo"
+							src="https://cdn.cdnlogo.com/logos/p/39/patreon.svg">https://patreon.com/konsoc</a>
+				</p>
+				<h5> Donation Alerts</h5>
+				<p>
+					<a href="https://donationalerts.com/r/konsoc"><img class="donate_logo"
+							src="https://www.donationalerts.com/img/header/logo.svg">https://donationalerts.com/r/konsoc</a>
+				</p>
+				<h5>BitCoin</h5>
+				<p>
+					<img class="donate_logo" src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg">
+					bc1q65aklpyt8dewxl03upqscfjfapsg6m5mn4kelg
+				</p>
+				<h5>Tелеграм-канал</h5>
+				<p>
+					<a href="https://t.me/konsoc_prototype"><img class="soc_logo"
+							src="https://cdn.cdnlogo.com/logos/t/37/telegram.svg">https://t.me/konsoc_prototype</a>
+				</p>
+			</div>
+			<div class="page_block">
+				<p class="text-start">
+					После того, как будет опрошена значительная часть "кандидатов" с "депутатами" и будет подготовлено
+					общественное мнение, можно станет начинать допрос и всей холуйской сволочи.
+					Для председателей УИКов следующий список вопросов:
+				</p>
+
+				<p class="text-start">
+					1. Вы, ФамилияИмяОтчество, исполняли обязанности председателя УИКа номер такой-то в городе таком-то?
+					2. Согласны ли Вы с тем, что выборы нужны для смены власти?<br />
+					3. Известно ли Вам, что сегодня у власти есть множество юридических закорючек и уловок, чтоб не
+					допускать нежелаемых кандидатов? Разные муниципальные фильтры. Необходимость сбора подписей и
+					последующая их графологическая экспертиза. Признание акций Яндекса и Сбербанка иностранным
+					активом и на
+					этом основании снятие с регистрации, как в случае с Потапенко...<br />
+					4. Согласны ли Вы с этой внутренней политикой огораживания политической безопасности?<br />
+					5. Согласны ли Вы, что действующая власть вообще может иметь какую-либо возможность не допускать
+					нежелательных кандидатов?<br />
+					6. ...т.е. Вы отрицаете, осуждаете и противитесь... По какой причине Вы вошли в состав
+					избирательной
+					комиссии? Из личного энтузиазма, от чистого сердца? За деньги? Или Вас кто-то принуждал?<br />
+					7. Гржаданка, Вы сейчас ставитесь в известность, что Вы являетесь соучастником тяжкого
+					государственного престпления, по которому предсмотрено наказание в виде
+					лишения свободы на срок от двенадцати до двадцати лет с последующим ограничением свободы
+					на срок до двух лет. Вы сможете избежать наказания только при условии активного раскаяния.
+					Для этого вы должны в течении недели записать видеообращение с требованием признать результаты
+					голосования по вашему участку недействительными. В противном случае, все Ваши
+					гнилые отмазки "я хорошая, просто мразь", "я честная, просто за деньги готова на любую мерзость"
+					в суде будут расцениваться как отягчающее обстоятельство. Вы предупреждены.<br />
+					<br />
+					//дальнейшие вопросы слищком интеллектуальны расходной "живой силы", но мне хочется оставить хоть
+					что-то от первоначального варианта пллана, а во-вторых, это будет интересно посмотреть на
+					уровень развития избиркомовской сволочи и сравнить их между собой... <br />
+					7. Расскажите, в чем смысл статьи простите конституции 81.3 - "Одно и то же лицо не может
+					занимать
+					должность Президента Российской Федерации более двух сроков." Зачем и почему ее туда
+					вписали?<br />
+					8. Согласны ли Вы, что статья 81.3. равнозначна следующему утверждению: "любой, кто занимает
+					должность
+					Президента Российской Федерации более двух сроков, является узурпатором, невзирая ни на какие
+					отмазки, увертки и жульничества"?<br />
+					<i>// Предложе́ние — это единица языка, которая представляет собой грамматически организованное
+						соединение слов, обладающее интонационной и <spanclass="fw-bold">
+							смысловой законченностью</span>.</i> <br />
+					9. Осознаете ли Вы бессмсленность фразы: "никто не может занимать пост Президента более двух
+					сроков,
+					кроме самого Президента"? Понимаете ли Вы, что относится к ней всерьез - это совершать
+					надругательство над логикой и здравым смыслом?
+					10. Зачем в простите конституцию была внесена дописка 81.3.1? <i>
+						<br />// не вижу смысла копипастить сюда
+						статью 81.3.1. Это ж какой-то кусок околоюридического бреда. Желающие сами легко нагуглят и
+						убедятся.</i><br />
+					11. Сколько трупов на совести гражданина, временно сейчас исполняющего обязанности президента
+					<s>России</s> РФ?<br />
+					<i>// Чечня. Норд-Ост. Беслан. Курск. Рязанский сахар. Грузия. Донбасс. Сирия. Недотравленные
+						Скрипали с
+						Навальным. Убитые Немцов, Политковская, Старовойтова... И это лишь те случаи, которые
+						приходят на ум первыми. А сколько уже забыто. Про сколько
+						успешных операций бессудных ликвидаций политических врагов мы просто не знаем...</i><br />
+					12. Ваша работа на избирательном участке номер такой-то района такого-то города такого-то - это
+					ваша личная, частная жизнь или общественно-значимая декятельность?<br />
+					13. Даете ли Вы разрешение на обнародование видео этого интервью?<br />
+					14. Почему нет?<br />
+					15. Боитесь ли Вы наказания за то, чем вы на выборах занимаетесь "по закону"? По закону за подписью
+					узурпатора.<br />
+					16. Стыдно ли Вам за то, чем вы на выборах занимаетесь "по закону"? По закону за подписью
+					узурпатора.
+				</p>
+
+				<p class="text-start">
+					Если с "депутатами" еще можно надеяться на какой-то диалог, просто потому, что они обязаны
+					проводить прием граждан, то с холуйками-исполнителями с самого низшего этажа "вертикали"
+					разговор будет происходить примерно по такому сценарию:
+				</p>
+				<p class="text-start p-3 bg-primary text-white">
+					<b>"Народный дознаватель":</b><br>
+					- Представьтесь, пожалуйста и снимите маску для видеофиксации вашего лица. <br>
+					<b>"Чинуша-пособник":</b><br>
+					- Кто вы такой, чтоб я называла вам свое имя? Мне запрещено снимать маску!<br>
+					- Какую роль вы исолняели на выборах? Вы председатель избирательной комиссии?<br>
+					- Вам запрещено здесь снимать!<br>
+					- Вы отказываетесь говорить, какое отношение вы имеете к изибартельному участку № XYZ по городу
+					Н.?<br>
+					- Вам по закону запрещено здесь снимать!<br>
+					- Женщина, вы ставитесь в известность, что вам сейчас предъявляется обвинение <br>
+					по статье 278 УК РФ - <i>Насильственный захват власти или насильственное удержание власти.
+					</i><br>
+					- Прекратите видеосъемку! Это запрещено законом!!!<br>
+					- Т.е. вы настаиваете, что закон гарантирует тайну выборного процесса на всех его этапах?<br>
+					- Чего? <br>
+					- Вы настаиваете, что закон, выдуманный преступной группировкой, захватившей власть в
+					государтсве
+					и превратившей само государство в орудие преступления, гарантирует Вашу защиту от общества?<br>
+					- Чего? Ты кто такой??? Быстро убрал камеру!!!<br>
+					- Вы понимаете, что вы себя только что
+					объявили СОЗНАТЕЛЬНЫМ пособником узурпации и даже членом ОПГ, явно осознающим преступность своих
+					действий перед
+					обществом, запрещая мне, как представителю общества, снимать в данном общественном месте Вас,
+					как государственного чиновника?<br>
+					- Эй, полиция!!! Забейте этого подонка палками за гаражамиииииии!!!<br>
+					- Знаете ли Вы, что явное и настойчивое запрещение видеофиксации преступления будет
+					в дальнейшем рассматриваться в суде как препятствование следствию?<br>
+				</p>
+			</div>
+
+
+
+
+			<div class="page_block">
+				<h2>Безопасность.</h2>
+				<p class="text-start">
+					Насколько опасен мой план для волонтеров? Он опасен настолько же, наколько опасна любая другая
+					борьба "в рамках загона". Или вы реально настолько затравлены, настолько забиты,
+					настолько зашуганы, что
+					для вас задать несколько вопросово вслух "представителю своих интересов" уже означает
+					ужжжасную дерзость и потрясание основ конституционного строя?
+					Нету совершенно никакого преступления в том, чтобы задавать какие бы то ни было вопросы
+					кому бы то ни было.
+					Скорее наоборот, "Не знать - не стыдно, стыдно не спросить."
+				</p>
+			</div>
+			<div class="page_block text-left">
+				<p class="text-start">
+					PS: У вас у всех есть свой маленький кусочек правды. Вы все нужны. И монархисты, и минархисты, и
+					националисты,
+					и либералы, и либертарианцы, и атеисты, и верующие, и трусы, и боевики, и даже прастихоспади
+					коммунисты. Вы нужны
+					все, за исключением насквозь лживой гебушни. <br />
+					У гебушни, надо признать, тоже есть свой кусочек правды:
+					"рабовладение - это устойчивый государственный строй". Только такая правда нам нафиг не нужна.
+				</p>
+				<p class="text-start">
+
+					<i>«Нет общины, организации, которая была бы как Остров, сама по себе, каждое объединение людей
+						есть часть
+						России, часть эгрегора; и если волной снесёт в море береговой Утёс, меньше станет Материк, и
+						так же,
+						если смоет край мыса или разрушит Замок твой или друга твоего; уничтожение каждого класса
+						общества
+						умаляет и меня, ибо я един со всей Россией, а потому не спрашивай, по ком звонит колокол: он
+						звонит по Тебе».</i>
+				</p>
+				<p class="text-start">
+					Слава России!
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="tab-pane page_wrapper" id="pg_money" role="tabpanel" aria-labelledby="nav-money-tab">
+		<div class="block_container">
+
+			<h3>Про важное, про деньги</h3>
+			<div class="page_block">
+
+				<p class="text-start ">
+					//Денег нет, писать не о чем.
+				</p>
+			</div>
+
+
+			<div class="page_block">
+				<div class="donate_wrapper">
+					<h4>Помочь Проекту:</h4>
+					<h5>Почта для сотрудничества</h5>
+					<p>
+						konsoc_pr@protonmail.com
+					</p>
+					<h5>Patreon</h5>
+					<p>
+						<a href="https://patreon.com/konsoc"><img class="donate_logo"
+								src="https://cdn.cdnlogo.com/logos/p/39/patreon.svg">https://patreon.com/konsoc</a>
+					</p>
+					<h5> Donation Alerts</h5>
+					<p>
+						<a href="https://donationalerts.com/r/konsoc"><img class="donate_logo"
+								src="https://www.donationalerts.com/img/header/logo.svg">https://donationalerts.com/r/konsoc</a>
+					</p>
+					<h5>BitCoin</h5>
+					<p>
+						<img class="donate_logo" src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg">
+						bc1q65aklpyt8dewxl03upqscfjfapsg6m5mn4kelg
+					</p>
+					<h5>Tелеграм-канал</h5>
+					<p>
+						<a href="https://t.me/konsoc_prototype"><img class="soc_logo"
+								src="https://cdn.cdnlogo.com/logos/t/37/telegram.svg">https://t.me/konsoc_prototype</a>
+					</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="tab-pane page_wrapper" id="pg_manifest" role="tabpanel" aria-labelledby="nav-manifest-tab">
+		<h1>КонСоц, манифест</h1>
+
+		<div class="block_container">
+			<div class="page_block text_block">
+
+				<h2>1. Именование - "КонСоц"</h2>
+				<p>Основное значение - "конструктор социального канона" (отсылка к переслегинскому "конструированию
+					культурного канона"). При этом, аллюзия на ангсоц, чтоб боялись исторической памяти. А также,
+					созвучно "консорции", что соотносится со смыслом Идеи.
+				</p>
+
+				<h2>2. Экономическая основа</h2>
+				<p>Налоги платятся добровольно. Насильственный сбор дани с "третьего сословия" запрещается. Понятно,
+					что
+					работяги добровольно никаких налогов платить не будут. Если захотят, то пускай, но в норме
+					работяги
+					слишком бедные и на них рассчитывать не стоит. Налоги придётся платить предпринимателям. Для
+					предпринимателей и так нормально тратить большую часть дохода на само дело, а для личного
+					потребления
+					оставлять вряд ли больше 5%. Но как заставить их платить, если никто этого не хочет? А заставить
+					их
+					можно, если понимать, что предприниматели зарабатывают с работяг. Когда работягам объяснить, что
+					они
+					могут выбирать, кому и за что платить.
+					Когда они будут вживую видеть, как дальше распределяются
+					заплаченные деньги, тогда "социально-ответственные" предприниматели выживут и процветут, а
+					всякая
+					жульническая и жадная дрянь сама собой издохнет. <br>
+					В общем, строго по анекдоту - "жрать горчицу добровольно и с песней".
+				</p>
+				<p>
+					Способы, так сказать, "агитации" предпринимателей за себя: <br>
+					1. Предприниматели будут выкладывать ролики про себя каждую неделю, и тогда работяги смогут
+					посмотреть на них "вживую" и ходить в те магазинчики, где хозяин более им симпатичен. А чем
+					больше
+					хозяин морально сознательный, тем больше он понимает свою ответственность за все и потому будет
+					сознательно выбирать, куда и в каких количествах оплачивать "государственные услуги".<br>
+					2. Предприниматели будут в открытом и удобопонятном доступе выкладывать информацию, сколько и на
+					какие "общественные блага" было ими потрачено процентов от выручки. Кто-то будет налегать на
+					спонсирование больниц. Кто-то займется соучастием в просветительской деятельности. А кому-то
+					вдруг
+					захочется колонизировать Венеру и этим своим болезненным мечтанием сумеет заразить всех, до кого
+					дотянется с пропагандой.<br>
+					3. Предприниматели также являются и судьями, неограниченными никакими законными рамками в
+					придумывании приговоров. Но при этом, судить они должны именно по Морали, носителями коорой они
+					сами
+					и являются. В противном случае, потерявший моральный авторитет предприниматель лишается своего
+					бизнеса, ибо с негодяем больше никто не захочет вести дела.<br>
+					Сегодня судьи полностью и АБСОЛЮТНО безответственны перед народом. Но когда от их решений будет
+					прямо зависеть их благосостояние, то тут-то и узнаем, что за бесы ползали столько веков по
+					кустам)<br>
+					<br>
+					// пункт про предпринимателей-судей - мой самый любимый) И он же - самый основной, это замковый
+					камень
+					всей Идеологи. Здесь вам и
+					мораль, и экономика, и аристократизм, и мистика... Убери судейство по Морали и все рассыпается в
+					бессмысленную груду мало чем связанных фантазий.
+				<p>
+
+				<h2>3. этика</h2>
+				<p>Базовые догматы тысячелетнего исторического наследия:<br>
+					1. Не убий,<br>
+					2. не укради,<br>
+					3. не лжесвидетельствуй,<br>
+					4. не возжелай жены ближнего своего.<br>
+					Результат Французской Революции и демократизации последних 200 лет:<br>
+					5. Все люди равны в правах по рождению.<br>
+					Новый устанавливаемый догмат:<br>
+					6. Насилие в экономике запрещено.<br>
+					<br>
+					// 1-5 понятно, что значит. А 6 про то, сегодня от голода никто не умирает, поэтому дураков
+					можно и нужно учить <s>выголодовкой</s> нищетой.
+				</p>
+
+				<h2>4. Религия</h2>
+				<p>Религиозный текст для аристократии - "Путь Ванталы".<br>
+					Основной смысловой тезис - "ты часть Мира и твои желания - это желания Мира. Но если не угадал,
+					что
+					нужно Миру, то ты сам себе злобный буратина". //нормальная религиозная шизофрения))
+				</p>
+				<p>
+					Моя вера:<br>
+					Для себя я выделяю четыре уровня сакральной реальности: мой личный ангел-искуситель, эгрегор
+					государства, Душа Геи, Закон Мироздания. Здесь совокупность сущностей каждого уровня вместе
+					образуют
+					объединенную сущность следующего уровня. Все вместе обзывается Рандомом, потому что человеку
+					нужна
+					персонификация бога. Мой Рандом - это просто отражение на ткань реальности меня же самого в
+					эгрегоре, к которому я же и принадлежу.<br>
+					Ну, а для толпы останется православие. Каждому вера по статусу его.
+				</p>
+
+				<h2>5. Политическое устройство</h2>
+				<p>Сборище мааааленьких государств в 2-3 мильона. Эта цифра - максимум, где люди еще могут
+					договориться
+					друг с другом (сравните полностью бескровную революцию в 3-х миллионной Армении с белорусским
+					чортечем, где населения 9 миллионов). И тогда маленькие государства будут сбиваться в кучу
+					потому,
+					что это выгодно каждому, а не потому, что каратели сгоняют рабов в рамки загона.<br>
+					"Россия" - это не государство. Государства с таким именем никогда не существовало. "Россия" -
+					это
+					эгрегор)
+				</p>
+
+				<h2>6. Менталитет русских, с их упоротостью на огромность пространства</h2>
+				<p>Связность эгрегора обеспечивается через "естественные монополии", ЦентроБанк, ж/д, газопроводы и
+					прочие энергосети, которые развернуты на всей территории и их невозможно разбить на мелкие
+					фирмочки,
+					чтоб конкурировать за свои маленькие делянки в общей системе. Когда единую энергосистему
+					попытались
+					разделить на мелкофирмочки, то получилась шиза.<br>
+					"Естественные монополии" в принципе не могут иметь конкурентов, ибо монополии по определению.
+					Поэтому конкурентность должна быть обеспечена иным, неэкономическим способом. А именно - в совет
+					директоров выбираются представители от каждого региона, чтоб договориться о тарифах.
+				</p>
+
+				<h2>7. Военная защита</h2>
+				<p>"Зонтичный принцип", когда куча мелочи договаривается собираться в единый кулак против общего
+					врага.
+					Если кто-то рехнется в каком-нибудь ваххабизме и полезет воевать соседа, тогда десяток других
+					ближайших
+					соседей соорганизуется и задавит бузотера тупо массой. Как известно, с ума поодиночке сходят.
+				<p>
+
+				<h2>8. Пропаганда, кому это ляжет в тему</h2>
+				<p>
+					<s>Царебожникам</s> Монархистам - потому что воспитание аристократии<br>
+					<s>Комунякам</s> Коммунистам - потому что социальность<br>
+					<s>Либерастам</s> Либералам - потому что свобода<br>
+					<s>Нацикам</s> Националистам - потому что мелкие государства потому и мелкие, чтоб там были
+					настоящие нации, разделяющие действительно общие духовные, культурные и моральные ценности.<br>
+					<s>Воцерковленышам</s> Православным, родноверам, буддистам, шизотерикам типа меня - потому что
+					духовность.<br>
+					<br>
+					Т.е., это объединяющая всех идеология. Призываете объединиться всей оппозиции? Прошу вас,
+					объединяйтесь вот на этой идеологии) Здесь есть место каждому. Здесь НЕОБХОДИМ каждый.<br>
+					Единственно, что здесь нет места для гэбушных бандитствующих глубоко аморальных подонков. Но
+					вряд ли
+					кого-то опечалит низвержение "бенефициаров режыма" во тьму внешнюю, где плач и скрежет зубов.
+				</p>
+
+				<h2>9. Практическая агитация</h2>
+				<p>"Силовики", которые присягали защищать народ, на самом деле живут бандитизмом, с грабежа этого
+					самого
+					народа. "Силовики" получают зарплату от государства, которое собирает деньги с налогов, которые,
+					на
+					самом деле, просто грабеж, только по закону.<br>
+					<span class="tw-bold">Бандитизм</span> - <span class="tst-italic">это отъем денег организованной
+						группой
+						лиц
+						под угрозой и/или с применением вооруженного насилия.</span> <br>
+					Вот совсем не понятно, чем узаконенный "сбор налогов" отличается от бандитизма.<br>
+					<br>
+					Концлагеря тоже были по закону.<br>
+					КОНЦЛАГЕРЯ. РАБСТВО. ГУЛАГИ. ГОЛОДОМОРЫ. ТОЖЕ. БЫЛИ. ПО. ЗАКОНУ
+				</p>
+
+				<h2>10. Мораль и законность</h2>
+				<p>Более-менее однородная мораль может быть только в граница 2-3-миллионного сообщества. А на
+					границах,
+					где мораль меняется, там "стабильность" обеспечивается межгосударственными договорами, т.е.
+					законами.</p>
+
+				<h2>11. "Как будут работать суды при анкапе"</h2>
+				<p>1. Судить должны сами предприниматели по своему личному предпочтению и предубеждению, которые за
+					свое
+					решение несут ответственность своим собственным бизнесом и репутацией. Прикрываться бумажками
+					"законности" не получиться.<br>
+					2. Как будет организована судебная иерархия - это решается в соответствии с местными условиями.
+					Где-то Судью Последней Инстанции будут выбирать всенародным голосованием. Где-то высшим судебным
+					органом будет Совет Старейшин. А где-то будут жить по кону, когда как порешил сход общины, то
+					так
+					оно окончательно и будет. И больше по данному делу опять всей толпой собираться не станут... Все
+					очень разнообразно и невозможно дать единообразный шаблон для всего разнообразия культур.
+					Например,
+					я совершенно не понимаю ислама. Ислам для меня - какая-то груда... ммм...
+					абстракций? софизмов? афоризмов? катренов? каких-то средневековых мракобесий?.. Не, не
+					понимаю)<br>
+					...<br>
+					Смертная казнь возможна, но приводить приговор в исполнение должен сам судья, а не уползать в
+					кусты
+					от ответственности. Причем самым грязным и пошлым способом, для полного погружения и проживания
+					процесса.
+					Например, до смерти затыкать
+					перочинным
+					ножиком приговоренного, у которого связаны руки и ноги. Который будет прыгать по камере
+					кусаться,
+					толкаться... В общем, через сутки из камеры выползет абсолютно седой и наглухо cвихнувшийся
+					"сторонник высшей меры наказания".
+				</p>
+
+				<h2>12. "Общечеловеческие права и свободы"</h2>
+				<p>Гарантирование прав и свобод должно быть реализовано на физическом уровне. Например, свобода
+					слова
+					гарантируется анонимностью, а не шизофреническим законом: "говорить можно все, кроме того, что
+					запрещено"
+				</p>
+
+				<h2>13. Воспитание аристократов и подданных (подчиненных, посдедователей, приверженцев...)</h2>
+				<p>Покупатели своими деньгами выражают одобрение или неодобрение поведению
+					предпринимателей-аристократов. Покупатели решают, кому жить и процветать, а кому побираться по
+					переходам, вечно неся покаяние за грехи. Как свои грехи, так и грехи родителей.
+				</p>
+
+				<h2>14. Имплементация Инфраструктуры</h2>
+				<p>Тем, кто будет пилить клоны, копипастить форки, я рекомендую платить 0,5% от дохода в
+					сторону "мастер-узла" Сети /* уточняю: прибыль = доходы - расходы */. Потому что:<br>
+					1. Необходимо сохранять связность системы. Человеческая психика заточена на иерархию. Прилюдные
+					заявления сегодня ничего не стоят, они совсем обесценились и потеряли содержательный смысл, в
+					отличие от реальных денежных переводов. В ООН все страны-участники оплачивают свое
+					членство и криво-косо масштабных войн в Мире нету, кгда альянс одних стран против
+					примерно такого же по силе другого альянса)<br>
+					2. Должна же России наконец дождаться вознаграждения за все ее претерпевания как в минувшем, так
+					и текущем веке...<br>
+					3. Это позорище, что сочинитель "Капитала", прозревший в корень и суть капитализма, умер в
+					нищете и никомуненужности.
+				</p>
+				<hr>
+				<p>
+					ну, как бы и всё...<br>
+					// интересно, что про это всё скажут Школьников и Переслегин? Сумеют ли они понять данный
+					краткий набор тезисов как полную и непротиворечивую идеологию?
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="tab-pane page_wrapper" id="pg_info" role="tabpanel" aria-labelledby="nav-info-tab">
+		<h1>Инфо</h1>
+		<div class="block_container">
+			<div class="page_block text-start">
+				<p>
+					Консоц (он же Революция Сознания, он же Прекрасная Россия Будущего, он же Project Mayhem, он же
+					наРОДовластие) - это четвертая возможная сегодня модель общества, в дополнение к известному
+					списку альтернатив:
+					монархия, социализм, демократия.
+				</p>
+			</div>
+
+			<div class="page_block">
+				<div class="donate_wrapper">
+					<h4>Помочь Проекту:</h4>
+					<h5>Patreon</h5>
+					<p>
+						<a href="https://patreon.com/konsoc"><img class="donate_logo"
+								src="https://cdn.cdnlogo.com/logos/p/39/patreon.svg">https://patreon.com/konsoc</a>
+					</p>
+					<h5> Donation Alerts</h5>
+					<p>
+						<a href="https://donationalerts.com/r/konsoc"><img class="donate_logo"
+								src="https://www.donationalerts.com/img/header/logo.svg">https://donationalerts.com/r/konsoc</a>
+					</p>
+					<h5>BitCoin</h5>
+					<p>
+						<img class="donate_logo" src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg">
+						bc1q65aklpyt8dewxl03upqscfjfapsg6m5mn4kelg
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="tab-pane page_wrapper" id="pg_kollaboranty" role="tabpanel" aria-labelledby="nav-kollaboranty-tab">
+		<h1>Бизнес-коллаборанты</h1>
+
+		<div class="block_container">
+			<div class="page_block text-start">
+				<p>Световское "Гражданское Общество" составило список "плохих" и "хороших" фирм и организаций по
+					признаку политической ангажированности, которые политически неугомонные граждане должны
+					бойкотировать. Еще был клон от "Открытой России", но на сейчас гуглеж выдает 404...</p>
+				<p>Это довольно примитивизированные попытки практически реализовать институт репутации. Но институт
+					репутации вещь крайне сложная не то что для реализации, а вообще для понимания. Там такое месиво
+					взаимосвязей и взаимовлияний... Что реализация в масштабе меньшем, чем полноценная соцсеть,
+					непременно получится в виде простенькой этажерки с двумя полочками. На одной полочке грудой
+					лежат
+					папочки с компроматом на "плохих", а на второй полочке - такая же неразобранная куча папочек с
+					рекомендательными письмами на "хороших".
+				</p>
+				<p>Жаль, что Content-Security-Policy не позволяет вставить фреймы с чужими сайтами) Поэтому просто
+					ссылки:<br>
+					<a href="https://spisok.civsoc.net/">https://spisok.civsoc.net</a> <br>
+					<a href="https://posobnik.com">https://posobnik.com</a>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="tab-pane page_wrapper" id="pg_lovi_kandidata" role="tabpanel" aria-labelledby="nav-lovi_kandidata-tab">
+		<h1>#Ловите кандидата!!</h1>
+		<img src="/files/images/02-todo/04_lovite_kandidata.png" alt="lovite-kandidata">
+		<div class="block_container">
+			<div class="page_block text-start">
+				<p><i>...на этой страничке должны быть видяшки, где ВСЕ "допущенные к выборам"
+						бывшие кандидаты/сегодняшние депутаты лично отвечают на несколько очень
+						конкретных и очень злых вопросов... </i><br />
+					<br />
+					Нет, чуваки-соучастники, если вы полагаете, что 19-го сентября для вас всё закончилось,
+					и вы либо безопасно отползли в кусты, либо получили депутатский иммунитет от
+					всего на свете, то вы заблуждаетесь. <br />
+					Для вас все только начинется ;)
+				</p>
+				<p>
+					Для того, чтобы вытащить за ушко на солнышко всех этих "недокандидатов/полудепутатов госдумы",
+					которые за 30 лет так хорошо по западным шаблонам научились прятаться за рекламными листовками,
+					проплаченными статейками, безответственными обещаниями... Чтобы наглядно продемонстрировать, чьи
+					интересы они на самом деле представляют, за чем они так настойчиво рвутся госдуму, чем они там
+					на самом деле будут заниматься, нужно их всех заставить отвечать на закрытые вопросы. Т.е.
+					на такие вопросы, где допустимы лишь короткие, точные, не допускающие двойных толкований ответы.
+					<br />
+					<span class="fw-bold">Лондон - это столица Великобритании?</span><br />
+					<i>Да. Нет. Не знаю.</i><br />
+					<span class="fw-bold">Прага - это столица Швеции?</span><br />
+					<i>Да. Нет. Не знаю.</i>
+				</p>
+
+				<h4>Шаблон допроса</h4>
+				<p>
+					1.1. Интересы какой группы населения нашей области Вы собираетесь представлять в госдуме?<br />
+					1.2. Т.е. Вы собираетесь представлять и мои интересы?<br />
+					1.3. Покажите проекты законов, с которыми Вы идете в госдуму и которые, по-Вашему мнению,
+					соответствуют моим интересам.
+				</p>
+				<p>
+					2.1. Согласны ли Вы с тем, что выборы нужны для смены власти?<br />
+					2.2. Расскажите, как метод узаконенного недопуска нежелательных кандидатов к выборам может
+					использоваться для узурпации власти.<br />
+					2.3. Известно ли Вам, что сегодня у власти есть множество юридических закорючек и уловок, чтоб
+					не
+					допускать нежелаемых кандидатов? Например, муниципальные фильтры. Необходимость сбора подписей и
+					последующая их графологическая экспертиза. Признание акций Яндекса и Сбербанка иностранным
+					активом и на
+					этом основании снятие с регистрации, как в случае с Потапенко.<br />
+					2.4. Согласны ли Вы с этой внутренней политикой огораживания политической безопасности?<br />
+					2.5. Согласны ли Вы с тем, что действующая власть вообще может иметь какую-либо возможность не
+					допускать
+					нежелательных кандидатов?<br />
+					2.6. Согласны ли Вы с тем, что Вы являетесь "согласованным" с действующей властью
+					кандидатом/депутатом?
+				</p>
+
+				<p>
+					3. Признаете ли Вы своим Президентом гражданина, временно сейчас занимающего эту должность?
+				</p>
+				<p>
+					4.1. Зачем и почему была изначально вписана в конституцию статья 81.3?<br />
+					<i>Это открытый вопрос. Очень хочется понаблюдать, в какие казуистические выкрутасы софизмов им
+						придется пускться, чтобы не дать правильный ответ: статья 81.3 в текущей редакции означает,
+						что любой, кто сидит в
+						президентском кресле более двух сроков, является УЗУРПАТОРОМ, совершающим государственное
+						преступление! И при этом совершенно не важны какие бы то ни было отмазки и крючкотворства,
+						когда
+						есть конкретная максимальная цифра - 2 срока. И НЕ БОЛЬШЕ! </i><br />
+					4.2. Зачем, с какой целью была сделана дописка 81.3.1 в конституции?<br />
+					<i>А тут я даже близко не могу представить, что можно ответить вслух. Вариант "так проголосовал
+						народ", по очевидности, не является
+						ответом на вопрос ЗАЧЕМ... Политически подкованный
+						кандидат с необходимой для согласования с АП степенью трусости и негодяйства никогда не
+						скажет
+						верный ответ - это узурпатор кривой козой присунул отмазку своему узурпаторству. Очень
+						интересно, сможет ли хоть кто-то придумать хоть что-то! Про любые другие статьи довольно
+						несложно рассказать "зачем". </i>
+				</p>
+				<p>
+					5.1. Что случится с человеком, если его лишить еды?<br />
+					<i>Единственный верный ответ - он умрет.</i><br />
+					5.2. Является ли лишение еды по указанию госчиновника использованием политики геноцида для
+					управления?<br />
+					<i>Единственно верный ответ - да. Ответ "нет" возвращает на шаг назад, к ответу на вопрос "что
+						случится с человеком, если его лишить еды?"</i><br />
+					5.3. Будете ли Вы требовать сурового тюремного наказания для всех губернаторов, применивших
+					политику геноцида в управлении, когда выдали указ не продавать в магазинах еду всем, кто
+					отказывался
+					надеть не предназначенную для защиты от вирусов хирургическую маску, считая ее оскорбляющим
+					человеческое достоинство намордником?<br />
+					5.4. Берете ли Вы на себя ответственность отказаться от депутатской должности, если в течении
+					полугода не добьетесь никаких существенных результатов по предыдущему вопросу и тем наглядно
+					покажете свою бесполезность, некомпетентность?
+					6.5. Что Вы здесь считаете существенными результатами?
+				</p>
+				<p>
+					6.1. Какие преступления Вы готовы оправдать "государственными интересами" и прикрываясь "волею
+					пославшего мя народа"?<br />
+					<i>Очевидно, что единственный возможный ответ вслух - никакие. И тогда начинается долгое
+						перечисление задокументированных преступлений против отдельных людей в частности и
+						массовых убийств в общем:</i><br />
+					6.1.1. Вы оправдываете Чечню? Донбасс? Сирию? Отравление Скрипалей? Отравление Навального?
+					Убийство
+					Немцова? Убийство Политковской? Убийство Старовойтовой? "Рязанский сахар"? Сбитие Боинга
+					"MH-17"?
+					Расстрел в затылок всех
+					террористов во время "Норд-Оста", когда чеченцы от полной безысходности решились на такой
+					отчаянный шаг, чтоб вынудить россиянские власти к разговору на равных, а не через прицел
+					танкового орудия? <br />
+					<i> ...можете сами продолжать этот бесконечный список...</i><br />
+					6.2. Будете ли Вы требовать уголовного наказания для лиц, осуществлявших руководство
+					спецоперациями "Беслан", "Курск", "Норд-Ост", за их
+					чудовищную некомпетентность, повлекшую гибель сотен людей? Убитых во время штурма,
+					задохнувшихся в консервной банке, умерших в больницах от последствий отравления газом...
+				</p>
+				<p>
+					7. Считаете ли вы передачу острова Даманский Китаю циничным надругательством над подвигом
+					советских пограничников, защитивших остров Даманский от китайского вторжения?<br />
+				</p>
+				<p>
+					8. Считаете ли вы, что аннексия Крыма в ФЕВРАЛЕ 2014-го была законной, потому что в МАРТЕ был
+					референдум?<br />
+
+					<i> Пусть этот негодяй покажет, какая извращенная логика клубится в его черепе.
+						Насколько там спутаны причинно-следственные связи. <br />
+						А еще собирается сочинять логически-непротиворечивые законы...</i>
+				</p>
+				<p>
+					9.1. У граждан есть свобода выбора?<br />
+					9.2. Граждане могут голосовать за кого хотят?<br />
+					9.3. Хабаровчане имеют право голосовать за Фургала, если хотят?<br />
+					<i>Возражение: но ведь он в тюрьме!</i><br />
+					9.3.а. Вы, собирающийся представлять мнение сотен тысяч жителей области (края,
+					республики) кандидат, считаете, что мнение сотен тысяч граждан хабаровского края, требующих
+					простить и отпустить Фургала, является более ничтожным, чем мнение кучки из пары десятков
+					граждан, считающих себя следователями, судьями, прокурорами?<br />
+					9.4. Вы считаете нормальным, что власть может применять практику заключения под стражу для
+					исключением противников из политической борьбы?<br />
+				</p>
+				<p>
+					10.1. Спецслужбы имеют право на физическое устранение политических противников?<br />
+					<i>ДА - это чистосердечное признание россиянии террористическим государством</i><br />
+					<i>НЕТ - при этом варианте далее идет дооолгое разбирательство на тему "что случилось с
+						Навальным?"</i>
+				</p>
+				<p>
+					11. Кто сбил боинг МН-17?<br />
+					<i>Кандидат скажет какую-нибудь официальную фейковую оправдалку. И после этого должно
+						последовать доооолгое разбирательство, на основе информации из книги ВАДИМА ЛУКАШЕВИЧА
+						"Трагедия МН17 правда и
+						ложь", почему кандидат лжет</i>
+				</p>
+				<p>
+					12. Считаете ли Вы Фонд Борьбы с Коррупцией экстремистской организацией?<br />
+					<i>если ДА, то:</i><br />
+					12.1-прим. за что?<br />
+					<i>если НЕТ, то:</i><br />
+					12.1-бис. Будете ли Вы требовать наказания, как для врагов народа, для тех, кто организовывал и
+					соучаствовал в уголовном преследовании членов этой общественной организации?<br />
+					12.2-бис. Берете ли Вы на себя ответственность отказаться от депутатской должности, если в
+					течении
+					полугода не добьетесь никаких существенных результатов по предыдущему вопросу и тем наглядно
+					покажете свою бесполезность, некомпетентность?<br />
+					12.3-бис. Что Вы в этом случае посчитаете "существенными результатами"?
+				</p>
+				<p>
+
+					13.1. Лукашенко действительно выиграл выборы 20-го года?<br />
+					<i>Если НЕТ, то кандидат признает нормальной, легитимной практику фальсифкации и
+						жульничества.</i><br />
+
+					13.2. Вы считаете правильной его политику террора для утихомиривания взбунтовавшегося
+					белорусского населения?<br />
+					<i> Если НЕТ, то кандидат признает себя врагом народа. </i><br />
+					13.3. Лукашенко террорист?<br />
+					<i>Если НЕТ, то кандидат признает себя врагом народа, откровенным террористом.</i><br />
+					<i>Если ДА, то:</i><br />
+					13.4.а. Будете ли Вы жестко осуждать россиянских пособников белорусскому государственному
+					терроризму?
+					<i>Если НЕТ, то кандидат признает себя врагом народа, морально готовым к организации
+						государственного терроризма уже на территории России.</i><br />
+					13.4.б. Будете ли Вы требовать для них тюремного наказания?<br />
+					<i>При ответе ДА на предыдущий вопрос и ответе НЕТ на этот получится шизофрения:
+						"Я пособников терроризму осуждаю, но им потворствую".</i><br />
+					13.4.в. Понимаете ли Вы, что выдача эрэфией миллиардных кредитов для Белоруссии - это
+					пособничество
+					терроризму?<br />
+					<i>При ответе НЕТ кандидат признает себя виновным по статье оправдания терроризма. И дальнейшие
+						пункты "г" и "д" пропускаются.</i><br />
+					13.4.г. Понимаете ли Вы, что все, кто в этом оказался замешан, должны понести суровое наказание,
+					невзирая на должности, статусы и былые заслуги?<br />
+					13.4.д. Берете ли Вы на себя ответственность отказаться от депутатской должности, если в течении
+					полугода не добьетесь никаких существенных результатов по предыдущему вопросу и тем наглядно
+					покажете свою бесполезность, некомпетентность?
+					13.4.е. Что Вы в этом случае считаете "существенными результатами"?<br />
+				</p>
+				<p>
+					14. Нормально ли для вас, что рфия на высшем уровне ведет равноправные переговоры с
+					террористической организацией, с Талибаном, запрещенной на территории РФ?<br />
+					<i>Тут кандидаты начнут петлять по кустам, что с другими государствами в любом случае надо вести
+						переговоры, налаживать отношения, унлублять и расширять торговые связи, кто бы там сейчас не
+						находился.<br />
+						Волонтеру надо добиваться четкого ответа.<br />
+						Либо: "Да, российское правительство может вести переговоры, заключать договоры и соглашения
+						с
+						террористической организацией, с Талибаном"<br />
+						Либо: "Нет, российскому правительству ни в коем случае не допустимо считать какую-либо
+						террористическую
+						организацию равноправным дипломатическим партнером"</i>
+				</p>
+				<p>
+					15. Сколько трупов на совести обнуленыша? Назовите минимальную и максимальную цифру.<br />
+
+					<i>Это проверка на знание собственной истории) Пусть он расскажет про Чечню, Грузию, Сирию,
+						"Норд-Ост", подлодку "Курск", далее везде...</i>
+				</p>
+				<p>
+					16. Одобряете ли Вы узаконенную практику навешивания ярлыков "иностранный агент" и
+					"нежелательная
+					организация"?<br />
+					<i>Если ДА, то с моральным обликом и уровнем развтиия кандидата становится все ясно.
+						Если НЕТ, то:</i>
+					16.1. Сколько вам потребуется времени, после избрания на должность депутата, чтобы отменить эту
+					пошлятину - возведение подростковых обзывательств в ранг высшей государственной
+					политики?<br />
+					<i>Интересно, сколько кандидатов вообще представляет, по каким инструкциям организована
+						внутренняя
+						жизнь госдуры?</i><br />
+					16.1. Будете ли Вы требовать общественного позора и осуждения для всех, кто оказался активно
+					замешан в этой похабщине?
+				</p>
+				<p>
+					17.1. Согласны ли вы, что покушающиеся на конституционные основы государства
+					должны быть сурово и показательно наказаны?<br />
+					17.2. Согласны ли вы, что выборы являются конституционной основой российской федерации?<br />
+					17.2. Согласны ли вы, что честность выборов является
+					конституционной основой российской федерации?<br />
+					17.3. Согласны ли вы, что прозрачность выборов является
+					конституционной основой российской федерации?<br />
+					17.4. Согласны ли вы, что свобода выборов является
+					конституционной основой российской федерации?<br />
+					17.5. Что вы собираетесь делать, чтобы наказать фальсификаторов выборов,
+					которые совершают тяжкое государственное преступление, видеозаписи чьих
+					преступлений доступны в Интернете?<br />
+					17.6. Что вы собираетесь делать, чтобы наказать тех, кто защищаеет фальсификаторов выборов
+					от уголовного наказания, а значит, не только является пособником покушения на интститут
+					выборов как конституционной основы государства, но и, используя государственные механизмы,
+					превращает само государство в орудие преступления? <br />
+				</p>
+				<p>
+					А сейчас свободная часть, для проверки общего развитие и наличия политической чуткости.<br />
+					Последовательный набор тем для рассуждений:
+				</p>
+				<p>
+					1. Попробуйте доказать утверждение, что воскресный кружок кройки и шитья является
+					террористической организацией.<br />
+					2. Попробуйте опровергнуть утверждение, что воскресный кружок кройки и шитья является
+					террористической организацией.<br />
+
+					3. Попробуйте доказать утверждение, что гитлеровское гестапо является террористической
+					организацией.<br />
+					4. Попробуйте опровергнуть утверждение, что гитлеровское гестапо является террористической
+					организацией.<br />
+
+					5. Попробуйте доказать утверждение, что ФСБ является террористической организацией.<br />
+					6. Попробуйте опровергнуть утверждение, что ФСБ является террористической организацией.
+
+				</p>
+				<p>
+
+
+					.....
+				</p>
+				<p>
+					PROFIT!
+				</p>
+				<p>
+					Список вопросов можно доооолго продолжать... Единственно, чтоб это были по возможности
+					закрытые вопросы, на который возможны лишь ответы "Да/Нет". Или максимально конкретные. Без
+					всякого вот такого подобного "что Вы думаете по поводу усиления интеграции и налаживания
+					международных связей в аспекте геополитичеких интересов межнационального сотрудничества в
+					условиях нарастания угроз мировой безопасности?"
+				</p>
+				<p class="text-start">
+					Пожалуйста, хотя бы мельком просмотрите лекции Андрея Макарова, чтобы понять, как надо вести
+					допрос. Какой конкретики и точности должны быть ответы. Что ответ "потому что гладиолус" на
+					вопрос
+					"почему солнце встает на востоке" совершенно нерелевантен. И чтоб вытрясти из головы всю ту
+					безумную дребедень, которую туда насовали пропагандоны за последние сто лет
+					совершенно разнузданной и бесстыжей агитации
+					за всякие людоедства. <br />
+					Например, вот эти два ролика: «Андрей Макаров: "Сократический диалог — метод познания себя и
+					других"»
+					и «Андрей Макаров: "Наука логической аргументации"». Мозги прочищаются удивительнейшим образом:
+				</p>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/QuwtUsYcYC0?controls=0"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/_PAc3FXMV4E?controls=0"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="tab-pane page_wrapper" id="pg_prisyaga" role="tabpanel" aria-labelledby="nav-prisyaga-tab">
+		<h1>Присяга народу</h1>
+
+		<div class="block_container">
+			<div class="page_block text-start">
+				<p>Тут должен быть список полицейских, публично подтвердивших свою верность народу в защите его от
+					преступников... </p>
+				<p>Under construction ;)</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="tab-pane page_wrapper" id="pg_sudii_agenty" role="tabpanel" aria-labelledby="nav-sudii_agenty-tab">
+		<h1>Судьи - "оккупационные агенты"</h1>
+		<div class="block_container">
+			<div class="page_block text-start">
+				<p>
+					Никогда, никогда, никогда не называть никого "иностранным агентом" или "нежелательной
+					организацией"
+					без указания, какое именно должностное лицо навесило эту обзывалку! Но только с указанием ФИО,
+					должности и места службы. А в статьях, где есть возможность добавлять картинки, так еще и очень
+					желательно с фотографией.
+				</p>
+				<p>
+					Например, так:<br>
+					<span class="fst-italic">"Судья Мосгорсуда Полыга Вячеслав Александрович признал Фонд борьбы с
+						коррупцией, который уже занесен в реестр иноагентов, а также Фонд защиты прав граждан
+						(ФБК-2) и
+						Штабы Навального экстремистскими организациями."</span><br>
+				</p>
+				<p class="text-sm-end">
+					<span><a
+							href="https://newtimes.ru/articles/detail/204713">https://newtimes.ru/articles/detail/204713</a></span>
+				</p>
+				<p>
+					Со временем, еще незапачкавшиеся в политоте судьи будут всячески отбояриваться от такой
+					сомнительной
+					чести прославиться на всю Россию, а зашкварившимся судьям-подонкам будет в суде сторон защиты
+					предъявляться отвод. В итоге все обвинения в "иностранной агентщине" и "нежелательности" просто
+					повиснут в воздухе. ..
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="tab-pane page_wrapper" id="pg_free_delegaty" role="tabpanel" aria-labelledby="nav-free_delegaty-tab">
+		<h1>"Несогласованные" делегаты.</h1>
+
+		<div class="block_container">
+			<div class="page_block text-start">
+				<p>Тут должен быть список кандидатов, заявивших о своем желании избираться в ГосДуму. Или даже те,
+					кого народ хочет считать представителем своих интересов, невзирая на его согласие/несогласие.
+					Например, Ройзман, Фургал, Навальный, имя им легион... </p>
+				<p>Одного публичного объявления о своем желании воспользоваться своим "пассивным избирательным
+					правом" достаточно, чтобы считаться полноправным кандидатом.</p>
+				<p>Under construction ;)</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="page_wrapper">
+		<div class="block_container">
+			<div class="page_block">
+
+				<div id="disqus_thread"></div>
+
+				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
+						powered
+						by
+						Disqus.</a></noscript>
+
+			</div>
+		</div>
+	</div>
+
+</div>

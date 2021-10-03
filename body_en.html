@@ -1,0 +1,971 @@
+<header>
+	<!-- ============= COMPONENT ============== -->
+	<nav class="navbar navbar-expand-lg navbar-dark ">
+		<div class="container-fluid">
+
+			<div class="soc_logo_wrapper">
+				<a href="https://t.me/kon_soc_world"><img class="soc_logo"
+						src="https://cdn.jsdelivr.net/gh/konsoc-demo/files-1@master/img/logos/telegram.svg"></a>
+				<a href="https://vimeo.com/user149798668">
+					<img class="soc_logo"
+						src="https://cdn.jsdelivr.net/gh/konsoc-demo/files-1@master/img/logos/vimeo-tile-white.svg"></a>
+				<a href="https://patreon.com/konsoc">
+					<img class="soc_logo"
+						src="https://cdn.jsdelivr.net/gh/konsoc-demo/files-1@master/img/logos/patreon.svg"></a>
+				<a href="https://donationalerts.com/r/konsoc"><img class="soc_logo"
+						src="https://cdn.jsdelivr.net/gh/konsoc-demo/files-1@master/img/logos/donationalerts.svg"></a>
+			</div>
+			<div class="header-logo">
+				<div href="/" class="nav-link nav-logo"><span class="logo-up">KonSoc</span><br>
+					<span class="logo-sub">Consortium&nbsp;of&nbsp;social&nbsp;canons</span>
+				</div>
+			</div>
+
+			<div class="lng_wrap d-flex nav_mobile">
+				<div class="dropdown nav_mobile">
+					<a class="btn btn_lng dropdown-toggle" href="#" role="button" id="btn_current_locale_mobile"
+						data-locale="en" data-bs-toggle="dropdown" aria-expanded="false">
+						<img class="lng_flag"
+							src='https://cdn.jsdelivr.net/npm/flag-icon-css@2.8.0/flags/4x3/gb.svg'>&nbsp;ru</a>
+					<ul class="dropdown-menu dropdown-menu-end">
+						<li><a class="dropdown-item" href="https://codepen.io/KonSoc/pen/xxrNwOq">
+								<img class="lng_flag"
+									src='https://cdn.jsdelivr.net/npm/flag-icon-css@2.8.0/flags/4x3/ru.svg'>&nbsp;ru</a>
+						</li>
+						<li><a class="dropdown-item active" href="https://codepen.io/KonSoc/pen/jOwobrg">
+								<img class="lng_flag"
+									src='https://cdn.jsdelivr.net/npm/flag-icon-css@2.8.0/flags/4x3/gb.svg'>&nbsp;en</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<button class="navbar-toggler nav_mobile collapsed" type="button" data-bs-toggle="collapse"
+				data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="navbar-collapse collapse " id="main_nav" >
+
+
+
+				<ul class="nav nav-pills navbar-nav">
+					<li class="nav-item">
+						<button class="nav-link active" id="nav-covid-tab" data-bs-toggle="tab"
+							data-bs-target="#pg_covid" type="button" role="tab" aria-controls="pg_covid"
+							aria-selected="true">COVID-map </button>
+					</li>
+					<li class="nav-item">
+						<button class="nav-link" id="nav-manifest-tab" data-bs-toggle="tab"
+							data-bs-target="#pg_manifest" type="button" role="tab" aria-controls="pg_manifest"
+							aria-selected="true">Manifest</button>
+					</li>
+					<li class="nav-item">
+						<button class="nav-link" id="nav-info-tab" data-bs-toggle="tab" data-bs-target="#pg_info"
+							type="button" role="tab" aria-controls="pg_info" aria-selected="true">Info</button>
+					</li>
+				</ul>
+				<div class="nav_desktop">
+					<div class="lng_wrap d-flex">
+						<div class="dropdown">
+							<a class="btn btn_lng dropdown-toggle" href="#" role="button" id="btn_current_locale"
+								data-locale="en" data-bs-toggle="dropdown" aria-expanded="false">
+								<img class="lng_flag"
+									src='https://cdn.jsdelivr.net/npm/flag-icon-css@2.8.0/flags/4x3/gb.svg'>&nbsp;ru</a>
+							<ul class="dropdown-menu dropdown-menu-end">
+								<li><a class="dropdown-item" href="https://codepen.io/KonSoc/pen/xxrNwOq"><img class="lng_flag"
+											src='https://cdn.jsdelivr.net/npm/flag-icon-css@2.8.0/flags/4x3/ru.svg'>&nbsp;ru</a>
+								</li>
+								<li><a class="dropdown-item active" href="https://codepen.io/KonSoc/pen/jOwobrg">
+									<img class="lng_flag"
+											src='https://cdn.jsdelivr.net/npm/flag-icon-css@2.8.0/flags/4x3/gb.svg'>&nbsp;en</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div> <!-- container-fluid.// -->
+	</nav>
+
+	<!-- ============= COMPONENT END// ============== -->
+</header>
+
+
+<div class="tab-content w-100 mt-4 mb-2 " id="curtain_body">
+
+	<div class="tab-pane active show page_wrapper" id="pg_covid" role="tabpanel" aria-labelledby="nav-covid-tab">
+
+		<h1>General comparative analysis of morbidity, mortality and vaccination from COVID-19</h1>
+
+		<div class="d-flex justify-content-center flex-wrap">
+			<div class="chart_container covid_container" >
+
+				<div id="chart_covid" class="chart_div"></div>
+
+				<div id="chart_vaccination_percent" class="chart_div"></div>
+				<div>
+					<label class="form-check-label"><input class="form-check-input" type="radio" name="chart_accuracy"
+							value="4_round"> 4-day average. </label>
+					<label class="form-check-label"><input class="form-check-input" type="radio" name="chart_accuracy"
+							value="7_round"> 7-day average. </label>
+					<label class="form-check-label"><input class="form-check-input" type="radio" name="chart_accuracy"
+							value="7_round_frame" checked> 7-day average "sliding window"</label>
+					<label class="form-check-label"><input class="form-check-input" type="radio" name="chart_accuracy"
+							value="as_is"> Raw numbers </label>
+					<div class="chart_size_wrap">
+						<label for="slct_chart_size">Graphic size: </label>
+						<select class="form-select form-select-sm" aria-label=".form-select-sm example"
+							id="slct_chart_size">
+							<option data-height="250" data-width="350">250x350</option>
+							<option data-height="350" data-width="550">350x550</option>
+							<option data-height="450" data-width="850" selected>450x850</option>
+							<option data-height="700" data-width="1200">700x1200</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="map_container covid_container">
+				<div id="svgMapDeaths"></div>
+				<div class="row slide_date_cap">
+					<p class="p_date_cap p_left"><span id="spnDateBegin"></span> </p>
+					<p class="p_date_cap p_center"><span id="spnDateCurrent"></span></p>
+					<p class="p_date_cap p_right"> <span id="spnDateEnd"></span></p>
+				</div>
+				<label for="dateRange"></label><input type="range" class="form-range" min="1" max="100" value="100"
+					id="dateRange">
+
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="input-group">
+							<label><input type="checkbox" class="form-check-input chk_map"
+									id="chk_map_relative">Relative to population</label>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="input-group">
+							<label for="slct_map_time">Timeframe: </label>
+							<select class="ms-2 form-select form-select-sm" aria-label=".form-select-sm example"
+								id="slct_map_time">
+								<option data-time="7days" selected>7 days</option>
+								<option data-time="all_time">Total/cumulative</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="row-not">
+					<label><input type="checkbox" class="form-check-input chk_map" id="chk_map_europe">Europe</label>
+					<label><input type="checkbox" class="form-check-input chk_map" id="chk_map_asia">Asia</label>
+				</div>
+				<div class="map_control_data_container">
+					<label class="form-check-label"><input class="form-check-input" type="radio" name="map_radio_data"
+							value="death" checked> Mortality </label>
+					<label class="form-check-label"><input class="form-check-input" type="radio" name="map_radio_data"
+							value="new_case"> Morbidity (cases) </label>
+					<label class="form-check-label"><input class="form-check-input" type="radio" name="map_radio_data"
+							value="vaccination"> Vaccination </label>
+					<label class="form-check-label"><input class="form-check-input" type="radio" name="map_radio_data"
+							value="death_rate"> Case fatality rate </label>
+				</div>
+			</div>
+			<div class="country_info_wrapper covid_container">
+				<div class="country_info_container covid_container" id="country_info_container">
+					<h6>Per-country statistics </h6>
+					<div class="cntr_info_line row">
+						<div class="cntr_info_param col"> placeholder
+						</div>
+						<div class="cntr_info_val col"> placeholder
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="block_container mt-4 ">
+			<iframe src="https://player.vimeo.com/video/621079666?h=a21d5f1a31" width="640" height="360" frameborder="0"
+				allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+		</div>
+
+		<div class="block_container">
+			<div class="page_block">
+				<div class="donate_wrapper">
+					<h4>Help the Project:</h4>
+					<h5>Email for correspondence</h5>
+					<p>
+						konsoc_pr@protonmail.com
+					</p>
+					<h5>Patreon</h5>
+					<p>
+						<a href="https://patreon.com/konsoc"><img class="donate_logo"
+								src="https://cdn.cdnlogo.com/logos/p/39/patreon.svg">https://patreon.com/konsoc</a>
+					</p>
+					<h5> Donation Alerts</h5>
+					<p>
+						<a href="https://donationalerts.com/r/konsoc"><img class="donate_logo"
+								src="https://www.donationalerts.com/img/header/logo.svg">https://donationalerts.com/r/konsoc</a>
+					</p>
+					<h5>BitCoin</h5>
+					<p>
+						<img class="donate_logo" src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg">
+						bc1q65aklpyt8dewxl03upqscfjfapsg6m5mn4kelg
+					</p>
+				</div>
+			</div>
+
+			<div class="page_block">
+				<p>
+					Chinese data is unreliable ;)
+				</p>
+				<div class="p-3 mb-2 bg-danger text-white">
+					<p>
+						WARNING!!!
+					</p>
+					<p class="text-start ">
+						All who will actively obstruct the dissemination of this information are recognized as CONSCIOUS
+						accomplices of the genocide. They will be held accountable as complicit in a crime against
+						humanity.
+					</p>
+				</div>
+
+				<p class="text-start">
+					In the beginning, I want to say why the analysis is presented here only for Russia and only briefly
+					mentioned other countries, like Mongolia or Thailand. This is because I can only speak responsibly
+					about what I know. I do not know the state of affairs in other countries. I do not know what
+					administrative actions were taken there. I don't know what vaccines were used there. <br />
+					Only domestic vaccines are used in Russia. Sputnik-5 is mainly used here. In other countries, other
+					vaccines are used. Therefore, it is impossible to directly transfer the experience of Russia to
+					other countries.<br />
+					It will be interesting for all of us if residents of other countries describe, on the basis of
+					statistical and historical data, how the pandemic went there. It will be interesting to see the
+					comparisons visually.
+					I also want to clarify that the "Case fatality rate" is almost meaningless to count day by day. This
+					makes sense only under rather rare conditions, when the mortality and morbidity graphs are
+					horizontal for a long time. In general, the "Case fatality rate" should be calculated for at least
+					monthly time intervals.
+				</p>
+
+				<p class="text-start p-3 mb-2 bg-primary text-white">
+					It will be interesting for all of us if residents of other countries describe, on the basis of
+					statistical and historical data, how the pandemic went there. It will be interesting to see the
+					comparisons visually.
+				</p>
+
+			</div>
+
+			<h3>Statistical anomalies of the COVID epidemic in Russia.</h3>
+
+			<div class="page_block">
+				<p class="text-start">
+					1. There are two kinds of waves - light and heavy. In a light wave, deaths and cases are
+					low, but
+					the waveform is sinusoid, with a mild inflexion and a continuous plateau at the maximum.
+					In
+					a heavy wave, deaths and cases are high, and the graph is triangular, when
+					in the beginning
+					there is a linear rise, a sudden break and a linear drop.
+					<br />
+					<br />
+					In Russia, from July to October there are two contradicting tendencies - a slow burning of the first
+					wave
+					and
+					accordingly,
+					a slow development of an exponential epidemic. However come October, a slow rise
+					(exponentially)
+					sharply
+					speeds up and reaches the maximum in the first dates of December. Which definitely repeats the
+					situation in
+					Ukraine. However,
+					if in Ukraine the epidemic post-peak also heads into decline, then in Russia it stops at
+					the plateau.
+					In
+					December, starts a (currently) slow vaccination campaign.
+					<br />
+				</p>
+				<p class="fst-italic fw-bold text-warning bg-dark">
+					First anomaly: The heavy wave should have a sharp inflexion.
+				</p>
+
+				<img class="col-10"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/files-1@master/files/images/01-init/proof_ru_01.png">
+
+				<p class="text-start">
+					2. After passing the plateau and before the beginning of the drop, a local hump of cases begins.
+					Which continues to correspond with the first peak of the common procedure. Data on the vaccinations
+					for the first few months
+					are untrustworthy, and after examination, this relationship can easily be considered far-fetched.
+					<br />
+				</p>
+				<p class="fst-italic fw-bold text-warning bg-dark">
+					The second anomaly - the correlation between local vaccination procedure peaks with local cases
+					peaks.
+				</p>
+
+				<img class="col-10"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/files-1@master/files/images/01-init/proof_ru_02.png">
+
+				<p class="text-start">
+					3. From the end of December to the middle of January, there is a drop in mortality. This then
+					suddenly changes to a
+					rise,
+					and within
+					a week, by the end of January, grows back to December's maximum.
+					In spite of this, there is no notable
+					difference
+					in the cases graph. There is only a small hump a month ago. The difference in
+					mortality
+					between
+					January's minimum and maximum mortality is 15%. At the same time as the relative
+					change
+					in cases is only 3%.
+				</p>
+				<p class="fst-italic fw-bold text-warning bg-dark">
+					Third anomaly - a fivefold mismatch in the changes of death graphs and
+					cases
+					On January 21st.
+				</p>
+
+				<img class="col-10 mb-2"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/files-1@master/files/images/01-init/proof_ru_03.png">
+
+				<p class="text-start">
+					4.
+				</p>
+				<p class="fst-italic fw-bold text-warning bg-dark">
+					Fourth anomaly - January death peak correlates day-to-day with the speed of
+					vaccination of the population
+				</p>
+
+
+				<img class="col-10 mb-2"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/files-1@master/files/images/01-init/proof_ru_04.png">
+
+
+				<p class="text-start">
+					5. From the end of December, cases drop in a linear fashion. At first, deaths drop following a drop
+					in cases.
+					But suddenly, during the middle of January there is a delay of an entire month and the deaths graph
+					starts to outpace cases.
+				</p>
+				<p class="fst-italic fw-bold text-warning bg-dark">
+					Fifth anomaly - a month-long delay in correlation between deaths and cases graphs.
+				</p>
+
+				<img class="col-10 mb-2"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/files-1@master/files/images/01-init/proof_ru_05.png">
+
+				<p class="text-start">
+					6. From the middle of March to the middle of June cases don't rise of fall. Then on the deaths
+					graph
+					for this segment there are 3 clear humps. These correspond to changes in the green graph.
+				</p>
+				<p class="fst-italic fw-bold text-warning bg-dark">
+					Sixth anomaly - correlation between vaccination and deaths.
+				</p>
+
+				<img class="col-10 mb-2"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/files-1@master/files/images/01-init/proof_ru_06.png">
+
+				<p class="text-start">
+					7. June the 8th, suddenly an explosive increase of cases. Literally within a
+					week
+					after cases, deaths rise to the stratosphere. Even though the normal delay is two times
+					more
+					- two weeks. I distinctly remember, that exactly during this time there was a fiery campaign
+					of propaganda
+					of willingly-forced vaccination, under the threat of starvation and poverty, and a cold death.
+					This is especially
+					suspicious, namely that arm-bending threats are so accurately correlated with natural
+					graphs
+					of deaths and cases.
+				</p>
+				<p class="fst-italic fw-bold text-warning bg-dark">
+					Seventh anomaly - simultaenous rapid increase in morbidity, cases and vaccinations.
+				</p>
+
+				<img class="col-10 mb-2"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/files-1@master/files/images/01-init/proof_ru_07.png">
+
+				<p class="text-start">
+					8. July 12th the green graph the artificial rise of the virus reaches its maximum and
+					starts
+					to decline. Approximately at the same time in mass media the news arises from different places about
+					a lack of equipment,
+					that
+					there's not enough Sputnik for everyone. Also, approximately at the same time there's a break
+					through of an informational
+					blockade
+					tears
+					of deaths and their relatives, whether they themselves are victims, due to death, no longer could
+					complain
+					to anyone. Within a few days, July 16th, the cases graph also reaches its peak and
+					starts
+					to drop. A few days later, July 20th, the deaths graph also stop its
+					ambitious
+					growth,
+					goes through the break-even point and comes out at a horizontal plateau.
+				</p>
+				<p class="fst-italic fw-bold text-warning bg-dark">
+					Eighth anomaly - the correlation between the inflexion points of all 3 graphs on July 21st.
+				</p>
+
+
+				<img class="col-10 mb-2"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/files-1@master/files/images/01-init/proof_ru_08.png">
+
+				<p class="text-start">
+					9. From the 17th of July to 27th of August (see screenshots), the deaths graph
+					becomes
+					equal and horizontal. At the same time, cases decrease. This is a statistical
+					anomaly.
+					First of all, deaths should be a two week delay from cases. Secondly,
+					a horizontal
+					deaths graph should correlate with a horizontal cases graph.
+				</p>
+				<p class="fst-italic fw-bold text-warning bg-dark">
+					Ninth anomaly - stable horizontal deaths graph for 40 days
+				</p>
+
+
+
+				<img class="col-10 mb-2"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/files-1@master/files/images/01-init/proof_ru_09.png">
+
+
+				<p class="text-start">
+
+					<span class="tw-bold">10. The case fatality rate in 2020 was 2%, but in 2021 it rose to 4%.</span>
+					<span class="text-danger tw-bold">A two-fold
+						increase!</span> This is practically impossible, that suddenly, such a sharp change would occur
+					between cases and mortality. Let's say that cases can swing to extremes, from 0 to extreme maxima
+					and back to 0. However, following an increase in cases, with a 2-week delay, we should see a
+					follow-through of deaths, just like a linear function:
+					death_cases = 0.02 * new cases.<br />
+					This number<span class="tw-bold">two-fold increase in the case fatality rate</span>I believe
+					to be the most promising evidence of my hypothesis about the deadly danger
+					of Sputnik, which over time shows no signs of decreasing. If in developed nations an increase
+					in deaths from the vaccine happens only for the first three months or so, then Russian Sputnik
+					gathers
+					its bloody harvest for more than 6 months with a stable reliability and effectiveness.
+				</p>
+				<p class="fst-italic fw-bold text-warning bg-dark">
+					Tenth anomaly - the case fatality rate at the time of the vaccination campaign increase
+					two-fold,
+					in comparison to the previous period of the natural flow of the pandemic.
+				</p>
+				<img class="col-10 mb-2"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/files-1@master/files/images/01-init/proof_ru_10.png">
+
+				<p class="text-start">
+					11. An amazing stable and high epidemic at the time of vaccination. In Russians,
+					as
+					is known, only domestic, import-substituted products are used. Mainly, Sputnik - and a few
+					other
+					patriotic devices. In Europe, however - many different kinds of vaccines are used, of Western
+					origin and production. <br />
+					If in other countries, in spite of all the deviations, the deaths graphs keep the trend of decrease
+					since
+					the December peak of the 2nd wave and after 6 months, by the beginning of August reaches almost 0,
+					then in
+					the blessed Motherland the deaths for the first month, from February stop to a third of the maximum
+					and
+					further
+					along the path demonstrates an inescapable Putinesque stability. <br />
+
+				</p>
+				<p class="fst-italic fw-bold text-warning bg-dark">
+					Eleventh anomaly - a stable, high and equally distributed epidemic throughout the entire
+					injection campaign.
+				</p>
+
+				<img class="col-10"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/files-1@master/files/images/01-init/proof_ru_11.png">
+				<br />
+				<img class="col-10 mb-2"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/files-1@master/files/images/01-init/proof_ru_12.png">
+
+				<p class="text-start">
+					12. This argument is not related to Russia, up to the point that Russia shares a border with
+					Mongolia. This comes to show as proof, that vaccination in general may be the only
+					reason for the epidemic.
+					<br />
+					In the Asian countries there was very low morbidity (cases), until they started artifically
+					infecting
+					with the virus. For example, in the peninsula nations of Indo-China or Mongolia. Asians in general
+					have a high
+					immunity to their local diseases and to the coronavirus especially. An exceptional example
+					here
+					is Thailand. It is the world's tourists' Mecca, where every year 30 million tourists visit.
+					Which is in total only
+					half of the total amount of Thais. That is to say, it is impossible to say that there was no
+					epidemic in Thailand,
+					as if it were closed off from the world and therefore no virus carrier could have
+					physically
+					sneaked the virus in.
+					Not at all. The first and second global waves in Thailand were fied. In the first wave, in
+					March-April 2020.
+					The amount of cases was around 100 a day and 2-3 deaths. In the second wave, in January
+					2021, the new cases were fixed at 200-400, in the first week of February reaching 900.
+					Despite this, deaths were almost non-existent, averaging
+					0.1-0.9 a day.
+					Or in other words, the case fatality rate during the first wave was 2%, and in the second -
+					0.2%.
+					A twenty-fold drop! That is to say, very similar to the image we see in Western Europe, where the
+					case
+					fatality rate in the first wave was up to 20%, around 2% during the second wave, also a 20-fold
+					decrease.<br />
+					But as soon as the vaccinations start, so too do all the graphs begin to rise. Both deaths, and
+					cases...
+				</p>
+				<p class="fst-italic fw-bold text-warning bg-dark">
+					12th anomaly - in certain Asian countries there was no epidemic, until
+					they didn't start vaccination campaigns.
+				</p>
+
+				<img class="col-10 mb-2"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/files-1@master/files/images/01-init/proof_ru_13.png">
+
+
+			</div>
+
+			<h3>The cost of "victory" over the epidemic</h3>
+
+			<div class="page_block">
+
+				<p class="text-start">
+					Basing on all the facts presented in the video, we can make the same
+					graphical
+					conclusion about what this all means. We can differentiate the artifical factor from
+					the natural one.
+				</p>
+
+				<p class="text-start">
+
+					From the examples of the quick, first European wave and the Ukranian delayed second wave, an
+					interpretable expected form
+					can be graphed, which should constitute with any natural wave. First, the rise on the left
+					corresponds in form
+					to the decline on the right. Second, the second wave, unlike the first, has sloping troughs on
+					both
+					sides, i.e. long periods of ignition and damping.
+				</p>
+
+				<p class="text-start">
+
+					On the same height, I took corresponding points on the rise and decline, recorded their
+					coordinates,
+					which the editor shows, and I saw that the horizontal distance from the rightand left
+					between
+					the points
+					above and below are equal to the pixel, i.e. their angles are equal.
+					This means the areas of the troughs must be equal as well.<br />
+					This was not the result of trial and error - an exact equal distance truly occured from my first
+					attempt. I was
+					surprised.
+				</p>
+
+				<img class="col-10"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/files-1@master/files/images/01-init/expect_02.png">
+
+				<p class="text-start">
+
+					For illustrative purposes, I draw the expected deaths graph in black, as it should be with
+					the natural
+					development of events. And so it should be that the entire area above the black line has an
+					artificial
+					origin.
+				</p>
+				<img class="col-10"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/files-1@master/files/images/01-init/expect_03.png">
+				<p class="text-start">
+					For some more illustrative purposes, I will paint this area red.<br />
+					Now the question to the inquisitive eye. Tell me, what is the difference in area between the black
+					and red areas?
+					Are they equal? Or is the black area 1.5x larger?<br />
+				</p>
+				<img class="col-10"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/files-1@master/files/images/01-init/expect_04.png">
+				<br />
+				<br />
+				<br />
+				<br />
+				<p class="text-start">
+					No. They are not even close to equal. Because at the moment of the screenshots (28 Aug 2021), the
+					number of
+					injected population was 30%. According to the plan, we need to reach 60%, to
+					even out
+					with the European 60%. <br />
+					The area of the red zone must increase two-fold.
+				</p>
+				<br />
+				<br />
+				<br /><br />
+				<br />
+				<br /><br />
+				<br />
+				<br /><br />
+				<br />
+				<br /><br />
+				<br />
+				<img class="col-10"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/files-1@master/files/images/01-init/expect_05.png">
+
+				<p class="text-start">
+
+
+					Yet even if we suppose, that currently there truly is a third wave, which has a natural
+					cause and is not the result of the police enforcement of the war against Covid, then in any
+					case
+					the amount of artifically-inflated deaths does not reach 10% of natural deaths. 10% I
+					consider
+					the maximally acceptable price, which we can pay for precaution and prophylaxis. When
+					the harm from
+					the prophylactic measures is equal to the harm from the disease, or even worse - twice as harmful,
+					then it no longer
+					is a prophylactic. It is a genocide. Pardon my language.
+				</p>
+				<img class="col-10"
+					src="https://cdn.jsdelivr.net/gh/konsoc-demo/files-1@master/files/images/01-init/expect_06.png">
+
+
+				<p class="text-start">
+					Yes, genocide. It doesn't matter in reality, whether it is the result of evil intentions,
+					or
+					an occurence by monstrofic incompetence by human forces.
+					It doesn't matter. What matters is only the
+					specific
+					amount of deaths. I will remind you that negligence is also written in the criminal code:
+				</p>
+
+				<p class="text-start ">
+					<span class="fw-bold">Criminal Code of the Russian Federation Article 293. Negligence </span><br />
+					<span class="fst-italic">
+						3. The act provided for in the first part of this article, entailed by negligence
+						death of two or more persons,<br />
+						is punishable by compulsory labor for a term of up to five years, with disqualification from
+						employment certain
+						positions or engage in certain activities for up to three years or without
+						or deprivation
+						freedom for up to seven years with the deprivation of the right to hold certain positions or
+						practice certain
+						activities for up to three years or without .</span>
+				</p>
+
+				<p class="text-start">
+					I however doubt that those who wrote the above statement, when saying "death of two or more persons"
+					considered
+					something
+					on a larger scale than the amount of people to fill a bus, where a drunk mechanic forgot to tighten
+					a nut in the
+					brakes.
+					If negligence became the reason for tens of thousands of deaths, then it has to be called by a
+					harsher
+					term,
+					than simply negligent behaviour to one's societal responsibilities.
+				</p>
+
+			</div>
+
+
+			<div class="page_block">
+				<h3>Data sources</h3>
+				<h5>Mortality</h5>
+				<p>
+					<a
+						href="https://github.com/CSSEGISandData/COVID-19/raw/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv">https://github.com/<wbr/>CSSEGISandData/COVID-19/raw/master/<wbr/>csse_covid_19_data/<wbr/>csse_covid_19_time_series/<wbr/>time_series_covid19_deaths_global.csv</a>
+				</p>
+				<h5> New cases </h5>
+				<p>
+					<a
+						href="https://github.com/owid/covid-19-data/raw/master/public/data/jhu/new_cases.csv">https://github.com/owid/<wbr/>covid-19-data/raw/master/<wbr/>public/data/<wbr/>jhu/new_cases.csv</a>
+				</p>
+				<h5>Vaccination</h5>
+				<p>
+					<a
+						href="https://github.com/owid/covid-19-data/raw/master/public/data/vaccinations/vaccinations.csv">https://github.com/owid/covid-19-data/<wbr/>raw/master/public/data/<wbr/>vaccinations/vaccinations.csv</a>
+				</p>
+			</div>
+		</div>
+
+
+		<div class="page_wrapper">
+			<div class="block_container">
+				<div class="page_block">
+
+					<div id="disqus_thread"></div>
+
+					<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
+							powered by Disqus.</a></noscript>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="tab-pane page_wrapper" id="pg_manifest" role="tabpanel" aria-labelledby="nav-manifest-tab">
+		<h1>ConSoc, manifest</h1>
+
+		<div class="block_container">
+			<div class="page_block text_block">
+
+				<h2>1. The name - "KonSoc"</h2>
+				<p>The general explanation - "Constructor of Social Canon" (a reference to Pereslegin's "construction of
+					cultural canon").
+					In addition, it is an allusion to Ingsoc, to induce fear of historical memory. Finally,
+					a consonant with the word "consortium", which corresponds to the meaning of the Idea.
+				</p>
+
+				<h2>2. Economic basis</h2>
+				<p>Taxes are being paid willfully. Forcible collection of tribute from the "third estate" is prohibited.
+					It is understand,
+					that
+					salaried workers willingly would not pay their tax money. If they so desire, let it be, but normally
+					workers
+					are too poor and their cooperation should not be expected. Taxes therefore need to be paid by
+					entrepreneurs. For
+					entrepreneurs it is normal to pay a large percentage of their profit on their businesses, and for
+					personal
+					use
+					are left with no more than %5. But how does one make them pay, if no one is willing to do so? Well,
+					it
+					is
+					possible, if one understands than entrepreneurs make money off their buyers. When explaining to the
+					buyers, that
+					they
+					can choose who to pay for what.
+					When they will see with their own eyes how their money
+					is divided, then the "socially responsible" entreprenaurs will survive and thrive, but
+					any
+					criminal or irrepsonsible trash will end up killing itself. <br>
+					In conclusion, strictly according to the joke - "to eat mustard voluntarily and with a song".
+				</p>
+				<p>
+					There are ways of so-called "agitations" that entrepeneurs can be liable to:<br>
+					1. Entrepreneurs will release videos of themselves every week, and then buyers will be able to
+					view their "Live" and go to those shops, where their boss is more sympathetic towards. The
+					more
+					that the boss is morally concious, the more he understands his responsibility for everything and
+					later can
+					make concious decisions regarding where and in what amounts to pay his "governmental services".<br>
+					2. Entrepreneurs will in an open and comprehensible manner allow for information dissipation, for
+					which
+					certain "societal goods" a certian percentage of their proceeds will be spent on. Someone will lean
+					on
+					sponsoring hospitals. Another will sponsor educational activities. Yet another will
+					suddenly
+					want to colonice Venus and with his infectious dreaming will be able to infect everyone who can be
+					reached via his propaganda.<br>
+					3. Entrepreneurs will also be judges, unlimited by any legal framework in the making of sentences.
+					However, they will only be able to judge based on Morality, carriers of which they
+					themselves
+					are. Otherwise, by losing the moral authority, entrepreneurs will be relieved of their
+					business, as no one will wish to do business with a crook.<br>
+					Nowadays judges are fully and ABSOLUTELY unaccountable to the people. However, when their welath
+					becomes
+					dependent on their their decisions, here we will find out, how many demons lurked in the shadows for
+					centuries.<br>
+					<br>
+					// The point about entrepreneur-judges - is my personal favourite :) It is also - the most basic
+					building block
+					of the entire Ideology. Here we have morality, economics, aristocratism and mystics ... Remove
+					judgement from Morality
+					and everything falls into an incomprehensible mess of disconnected fantasies.
+				<p>
+
+				<h2>3. Ethics</h2>
+				<p>Base dogmas of the millenia-old historical heritage:<br>
+					1. Do not kill,<br>
+					2. Do not steal,<br>
+					3. Do not give perjury,<br>
+					4. Do not bed your close one's wife.<br>
+					The result of the French Revolution and democratisation of the last 200 years:<br>
+					5. All people are equal in their rights by birth.<br>
+					The new institutionalised dogma:<br>
+					6. Violent coercion in economics is forbidden.<br>
+					<br>
+					// 1-5 are clear in their meaning. 6 however is about the point that no one starves to death
+					nowadays, hence fools
+					can and must be taught by poverty.
+				</p>
+
+				<h2>4. Religion</h2>
+				<p>Religious text for the aristocracy - "The way of Vantals".<br>
+					The main point of the tesis - "you are part of the World and your desires - are the World's desires.
+					If you didn't guess,
+					what the World needs, then you will be fully punished in justice by Reality.". // Normal religious
+					schizophrenia :)
+				</p>
+				<p>
+					My belief:<br>
+					For myself I divide 4 levels of sacral reality: My personal angel-tempter, country
+					egregor, Soul of Gaia, Law of the Universe. Here is a collection of entities of each level, which
+					together
+					unite to a single entity of the next level. All together are called Random, because a person
+					needs
+					a personification of a God. My Random - is simply a reflection of the string of my own reality in
+					the
+					egregor, to which I belong to.<br>
+					Well, and for the masses there will still be Christian Orthodoxy. To each status, their own faith.
+				</p>
+
+				<h2>5. Political structure</h2>
+				<p>A collection of smaaaall countries of 2-3 million. This number - is the maximum, where people can
+					still
+					find agreement
+					with each other (remember the completely bloodless revolution in 3-million populated Armenia with
+					the Belarus
+					crap, with a population of 9 million). Then these small country will unite in a group
+					because
+					it is in everyone's benefit and not because cartels drive slaves under protection of law.<br>
+					"Russia" - is not a country. A country with such a name has never existed. "Russia"
+					is an egregor :)
+				</p>
+
+				<h2>6. The Russian mentality, with their tenacity on the vastness of land</h2>
+				<p>
+					A group of close countries is an egregor. Like USA, European Union, Russia or China.
+					The connectivity of egregor is possible through "natural monopolies", like central bank, railway,
+					gas pipelines and
+					others, which cross entire territory and they are impossible to break into smaller
+					firms,
+					in order to compete for their small deals in their local systems. When one singular energy system
+					tried to
+					divide into micro-firms, s* hit the fan.<br>
+					"Natural monopolies" cannot have competitors, that is the definition of a monopoly.
+					Therefore competition has to be provided in another, non-economic way. Specifically, in a board
+					of directors who are drawn from representatives of each region, to agree on tariffs.
+				</p>
+
+				<h2>7. Military defence</h2>
+				<p>"The Umbrella Principle", when many small entities organised into a single fist against a common
+					enemy.
+					If someone goes crazy in some type of Wahhabism and tries to fight his neighbours, then tens of
+					other close
+					neighbours will organise and will crush the bully via sheer mass.
+				<p>
+
+				<h2>8. Propaganda, to whom whatever is closest to heart</h2>
+				<p>
+					Monarchists - because of aristocracy<br>
+					Communists - because of sociality<br>
+					Liberals - because of economical freedom and liberty<br>
+					Nationalists - because of sharing same spiritual, cultural and moral values between people.<br>
+					The Christian Orthodox, Pagans, Buddhists, schizoterics like me - because of spirituality.<br>
+					<br>
+					I.e. it is an all-inclusive Idea, where everyone will find their right and necessary place.
+				</p>
+
+				<h2> 9. Practical agitation </h2>
+				<p> The "siloviks", who have sworn to protect the people, actually live by banditry, from the plunder of
+					the people. "Siloviks" receive salaries from the state, which collects money from taxes, which, on
+					in fact, just a legalized robbery. <br>
+					<span class="tw-bold"> Banditry </span> - <span class="tst-italic"> is the taking of money by an
+						organized group of persons under threat and / or with the use of armed violence. </span> <br>
+					It is not at all clear how legalized "tax collection" differs from banditry. <br>
+					<br>
+					Concentration camps were also under the law. <br>
+					CONCENTRATION CAMPS. SLAVERY. GULAGS. UNIT 731. HUNGERS. WERE. ALSO. BY. THE. LAW.
+				</p>
+
+				<h2> 10. Morality and legality </h2>
+				<p> More or less homogeneous morality can only be within the boundaries of a 2-3 million community. And
+					on borders, where morality changes, "stability" is ensured by interstate agreements, i.e. by laws.
+				</p>
+
+				<h2> 11. "How the courts will work under Anarcho-capitalism" </h2>
+				<p> 1. It is up to entrepreneurs to judge by their own personal preference and prejudice. Entrepreneurs
+					are responsible for their judgment by their own business and reputation. Entrepreneurs do not have a
+					legal education, so they will not be able to hide behind volumes of criminal codes. <br>
+					2. How the judicial hierarchy will be organized is decided according to local conditions. Somewhere
+					the Judge of Last Instance will be elected by popular vote. Somewhere the highest judicial body will
+					be the Council of Elders. And somewhere they will live at stake, when, as decided by the gathering
+					of the community, then so it will finally be. And the whole crowd will not gather again in this case
+					... Everything is very diverse and it is impossible to give a uniform template for the entire
+					diversity of cultures. <br>
+					For example, I do not know what is going on in the Sharia court. Even more, I don't understand Islam
+					at all. Islam for me is some kind of pile of ... mmm ... abstractions? sophisms? aphorisms?
+					quatrains? some kind of medieval obscurantism? .. No, I don't understand) <br>
+
+				<h2> 12. "Human rights and freedoms" </h2>
+				<p> The guarantee of rights and freedoms must be realized at the physical level. For example, freedom of
+					speech is guaranteed by anonymity, not by the schizophrenic law: "You can say everything except what
+					is prohibited."
+				</p>
+
+				<h2> 13. Education of aristocrats and subjects (subordinates, followers, adherents ...)</h2>
+
+				<p> Buyers with their money express their approval or disapproval of the behavior of aristocratic
+					entrepreneurs. Buyers decide who to live and prosper, and who to beg through the crossings, forever
+					bearing repentance for their sins. Both their sins and the sins of their parents. </p>
+
+				<h2> 14. Infrastructure Implementation </h2>
+				<p> For those who will create clones, copy-paste forks, I recommend paying 0.5% of income to the
+					<i>"master node" of the Network</i> /* profit = income - expenses */. Because: <br>
+					1. It is necessary to maintain the coherence of the System. The human psyche is geared towards
+					hierarchy. Public statements today are worthless, they have completely depreciated and lost
+					meaningful meaning, unlike real money transfers. At the UN, all participating countries pay their
+					membership and crookedly large-scale wars in the world are not present, when the alliance of some
+					countries is against about the same strength of another alliance) <br>
+					2. I want Russia to finally receive rewards for all its sufferings, both in the past and the current
+					century... <br>
+					3. It is a shame that the writer of Capital, who saw the root and essence of capitalism, died in
+					poverty and neglect.
+				</p>
+				<p>
+					Well, that's all ... To put it very, very briefly and only the most important things.
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="tab-pane page_wrapper" id="pg_info" role="tabpanel" aria-labelledby="nav-info-tab">
+		<h1>Info</h1>
+		<div class="block_container">
+			<div class="page_block text-start">
+				<p>
+					KonSoc (aka the Revolution of Consciousness, aka the Beautiful <s>Russia</s> World of the Future,
+					aka "Project Mayhem", aka People's Rule) is the fourth possible model of society today, in addition
+					to the well-known list of alternatives: monarchy, socialism, democracy.
+				</p>
+			</div>
+
+			<div class="page_block">
+				<div class="donate_wrapper">
+					<h4>Help Project:</h4>
+					<h5>Patreon</h5>
+					<p>
+						<a href="https://patreon.com/konsoc"><img class="donate_logo"
+								src="https://cdn.cdnlogo.com/logos/p/39/patreon.svg">https://patreon.com/konsoc</a>
+					</p>
+					<h5> Donation Alerts</h5>
+					<p>
+						<a href="https://donationalerts.com/r/konsoc"><img class="donate_logo"
+								src="https://www.donationalerts.com/img/header/logo.svg">https://donationalerts.com/r/konsoc</a>
+					</p>
+					<h5>BitCoin</h5>
+					<p>
+						<img class="donate_logo" src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg">
+						bc1q65aklpyt8dewxl03upqscfjfapsg6m5mn4kelg
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="page_wrapper">
+		<div class="block_container">
+			<div class="page_block">
+
+				<div id="disqus_thread"></div>
+
+				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
+						powered
+						by
+						Disqus.</a></noscript>
+
+			</div>
+		</div>
+	</div>
+	
+</div>
